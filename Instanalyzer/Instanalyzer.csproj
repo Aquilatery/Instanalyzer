@@ -2,14 +2,66 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <!--<TargetFramework>net48</TargetFramework>-->
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>Resources\ICO.ico</ApplicationIcon>
+    <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
     <StartupObject>Instanalyzer.Instanalyzer</StartupObject>
+    <ApplicationManifest>App.manifest</ApplicationManifest>
+    <Company>Soferity LLC</Company>
+    <Title>$(AssemblyName) - Instagram Analyzer</Title>
+    <Description>$(Title)</Description>
+    <AssemblyName>$(Title)</AssemblyName>
+    <Product>$(Title)</Product>
+    <InformationalVersion>$(Version)</InformationalVersion>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <FileVersion>$(Version)</FileVersion>
+    <Version>$([System.DateTime]::Today.ToString(yy)).$([System.DateTime]::Today.ToString(MM)).$([System.DateTime]::Today.ToString(dd)).$([System.DateTime]::Now.ToString(HH))$([System.DateTime]::Now.ToString(mm))</Version>
+    <AssemblyName>Instanalyzer</AssemblyName>
+    <RootNamespace>$(AssemblyName)</RootNamespace>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <LangVersion>latest</LangVersion>
+    <Copyright>Copyright © $([System.DateTime]::Today.ToString(yyyy)) $(Company)</Copyright>
+    <Configurations>Debug;Release</Configurations>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <ApplicationManifest>App.manifest</ApplicationManifest>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <RetainVMGarbageCollection>true</RetainVMGarbageCollection>
+    <ThreadPoolMinThreads>1</ThreadPoolMinThreads>
+    <ThreadPoolMaxThreads>100</ThreadPoolMaxThreads>
+    <!-- Supported as of .NET Core SDK 3.0 Preview 1 -->
+    <TieredCompilation>true</TieredCompilation>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'=='net5.0'">
+    <DisableFody>true</DisableFody>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net48'">
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <AppConfigWithTargetPath Include="App.$(TargetFramework).config">
+      <TargetPath>$(AssemblyName).exe.config</TargetPath>
+    </AppConfigWithTargetPath>
+  </ItemGroup>
+    
   <ItemGroup>
     <PackageReference Include="ReaLTaiizor" Version="3.7.8" />
+    <PackageReference Include="Costura.Fody" Version="5.0.0-alpha0281">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive; compile</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +77,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Utils\" />
   </ItemGroup>
 
 </Project>

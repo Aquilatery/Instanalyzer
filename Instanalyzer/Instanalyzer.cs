@@ -1,4 +1,5 @@
 using System;
+using Instanalyzer.Views;
 using System.Windows.Forms;
 
 namespace Instanalyzer
@@ -12,9 +13,11 @@ namespace Instanalyzer
         static void Main()
         {
             Application.EnableVisualStyles();
+            #if NET5_0
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            #endif
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Login());
         }
     }
 }
