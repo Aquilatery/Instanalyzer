@@ -41,13 +41,22 @@
     <InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)'=='net5.0'">
+  <PropertyGroup Condition="'$(TargetFramework)'=='net5.0-windows'">
     <DisableFody>true</DisableFody>
   </PropertyGroup>
+
+  <!--<ItemGroup Condition="'$(TargetFramework)'=='net5.0-windows'">
+    <Reference Include="ReaLTaiizor">
+      <HintPath>..\..\..\..\ReaLTaiizor\Lib\ReaLTaiizor\src\ReaLTaiizor\bin\Release\net5.0-windows\ReaLTaiizor.dll</HintPath>
+    </Reference>
+  </ItemGroup>-->
 
   <ItemGroup Condition="'$(TargetFramework)'=='net48'">
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Forms" />
+    <!--<Reference Include="ReaLTaiizor">
+      <HintPath>..\..\..\..\ReaLTaiizor\Lib\ReaLTaiizor\src\ReaLTaiizor\bin\Release\net48\ReaLTaiizor.dll</HintPath>
+    </Reference>-->
   </ItemGroup>
   
   <ItemGroup>
