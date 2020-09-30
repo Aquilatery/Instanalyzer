@@ -182,7 +182,7 @@ namespace Instanalyzer.Views
             this.RMBR.Checked = true;
             this.RMBR.CheckState = System.Windows.Forms.CheckState.Checked;
             this.RMBR.Depth = 0;
-            this.RMBR.Location = new System.Drawing.Point(30, 209);
+            this.RMBR.Location = new System.Drawing.Point(21, 209);
             this.RMBR.Margin = new System.Windows.Forms.Padding(0);
             this.RMBR.MouseLocation = new System.Drawing.Point(-1, -1);
             this.RMBR.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -199,13 +199,13 @@ namespace Instanalyzer.Views
             this.PWD.Depth = 0;
             this.PWD.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.PWD.Hint = "Şifre";
-            this.PWD.Location = new System.Drawing.Point(30, 149);
+            this.PWD.Location = new System.Drawing.Point(21, 149);
             this.PWD.MaxLength = 100;
             this.PWD.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             this.PWD.Multiline = false;
             this.PWD.Name = "PWD";
             this.PWD.Password = true;
-            this.PWD.Size = new System.Drawing.Size(328, 50);
+            this.PWD.Size = new System.Drawing.Size(340, 50);
             this.PWD.TabIndex = 11;
             this.PWD.Text = "";
             this.PWD.UseAccent = false;
@@ -217,12 +217,12 @@ namespace Instanalyzer.Views
             this.USN.Depth = 0;
             this.USN.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.USN.Hint = "Telefon numarası, kullanıcı adı veya e-posta";
-            this.USN.Location = new System.Drawing.Point(30, 93);
+            this.USN.Location = new System.Drawing.Point(21, 93);
             this.USN.MaxLength = 100;
             this.USN.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             this.USN.Multiline = false;
             this.USN.Name = "USN";
-            this.USN.Size = new System.Drawing.Size(328, 50);
+            this.USN.Size = new System.Drawing.Size(340, 50);
             this.USN.TabIndex = 10;
             this.USN.Text = "";
             // 
@@ -255,7 +255,7 @@ namespace Instanalyzer.Views
             this.SGN.DrawShadows = true;
             this.SGN.HighEmphasis = true;
             this.SGN.Icon = null;
-            this.SGN.Location = new System.Drawing.Point(201, 208);
+            this.SGN.Location = new System.Drawing.Point(204, 208);
             this.SGN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.SGN.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.SGN.Name = "SGN";
@@ -271,9 +271,9 @@ namespace Instanalyzer.Views
             // 
             this.IGLL.BackColor = System.Drawing.Color.Transparent;
             this.IGLL.Image = global::Instanalyzer.Properties.Resources.Instagram;
-            this.IGLL.Location = new System.Drawing.Point(30, 13);
+            this.IGLL.Location = new System.Drawing.Point(21, 13);
             this.IGLL.Name = "IGLL";
-            this.IGLL.Size = new System.Drawing.Size(328, 66);
+            this.IGLL.Size = new System.Drawing.Size(340, 66);
             this.IGLL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IGLL.TabIndex = 4;
             this.IGLL.TabStop = false;
