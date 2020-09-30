@@ -36,7 +36,7 @@ namespace Instanalyzer.Views
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BorderColor = System.Drawing.Color.SeaGreen;
+            this.BorderColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Image = global::Instanalyzer.Properties.Resources.NaturalInterface;
