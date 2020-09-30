@@ -32,15 +32,28 @@ namespace Instanalyzer.Views
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.USN = new ReaLTaiizor.Controls.HopeTextBox();
             this.AIL = new ReaLTaiizor.Controls.MetroLabel();
-            this.PSW = new ReaLTaiizor.Controls.HopeTextBox();
+            this.PWD = new ReaLTaiizor.Controls.HopeTextBox();
             this.SGN = new ReaLTaiizor.Controls.MetroButton();
             this.lostCheckBox1 = new ReaLTaiizor.Controls.LostCheckBox();
-            this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
+            this.MAIMG = new ReaLTaiizor.Controls.HopePictureBox();
+            this.TBPG = new ReaLTaiizor.Controls.MaterialTabControl();
+            this.MAIN = new System.Windows.Forms.TabPage();
+            this.MESSAGE = new System.Windows.Forms.TabPage();
+            this.MIMG = new ReaLTaiizor.Controls.HopePictureBox();
+            this.MINFO = new ReaLTaiizor.Controls.MetroLabel();
+            this.MBACK = new ReaLTaiizor.Controls.MetroButton();
+            this.WAIT = new System.Windows.Forms.TabPage();
+            ((System.ComponentModel.ISupportInitialize)(this.MAIMG)).BeginInit();
+            this.TBPG.SuspendLayout();
+            this.MAIN.SuspendLayout();
+            this.MESSAGE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MIMG)).BeginInit();
             this.SuspendLayout();
             // 
             // USN
             // 
+            this.USN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.USN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.USN.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.USN.BorderColorA = System.Drawing.Color.DodgerBlue;
@@ -48,7 +61,7 @@ namespace Instanalyzer.Views
             this.USN.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.USN.ForeColor = System.Drawing.Color.Silver;
             this.USN.Hint = "Username";
-            this.USN.Location = new System.Drawing.Point(5, 125);
+            this.USN.Location = new System.Drawing.Point(6, 119);
             this.USN.MaxLength = 50;
             this.USN.Multiline = false;
             this.USN.Name = "USN";
@@ -64,8 +77,10 @@ namespace Instanalyzer.Views
             // 
             // AIL
             // 
+            this.AIL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.AIL.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.AIL.Location = new System.Drawing.Point(5, 91);
+            this.AIL.Location = new System.Drawing.Point(6, 85);
             this.AIL.MetroStyleManager = null;
             this.AIL.Name = "AIL";
             this.AIL.Size = new System.Drawing.Size(265, 31);
@@ -76,31 +91,34 @@ namespace Instanalyzer.Views
             this.AIL.ThemeAuthor = "Taiizor";
             this.AIL.ThemeName = "MetroDark";
             // 
-            // PSW
+            // PWD
             // 
-            this.PSW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.PSW.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.PSW.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.PSW.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PSW.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.PSW.ForeColor = System.Drawing.Color.Silver;
-            this.PSW.Hint = "Password";
-            this.PSW.Location = new System.Drawing.Point(5, 169);
-            this.PSW.MaxLength = 100;
-            this.PSW.Multiline = false;
-            this.PSW.Name = "PSW";
-            this.PSW.PasswordChar = '\0';
-            this.PSW.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.PSW.SelectedText = "";
-            this.PSW.SelectionLength = 0;
-            this.PSW.SelectionStart = 0;
-            this.PSW.Size = new System.Drawing.Size(265, 38);
-            this.PSW.TabIndex = 1;
-            this.PSW.TabStop = false;
-            this.PSW.UseSystemPasswordChar = true;
+            this.PWD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PWD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.PWD.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.PWD.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.PWD.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PWD.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.PWD.ForeColor = System.Drawing.Color.Silver;
+            this.PWD.Hint = "Password";
+            this.PWD.Location = new System.Drawing.Point(6, 163);
+            this.PWD.MaxLength = 100;
+            this.PWD.Multiline = false;
+            this.PWD.Name = "PWD";
+            this.PWD.PasswordChar = '\0';
+            this.PWD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.PWD.SelectedText = "";
+            this.PWD.SelectionLength = 0;
+            this.PWD.SelectionStart = 0;
+            this.PWD.Size = new System.Drawing.Size(265, 38);
+            this.PWD.TabIndex = 1;
+            this.PWD.TabStop = false;
+            this.PWD.UseSystemPasswordChar = true;
             // 
             // SGN
             // 
+            this.SGN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SGN.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.SGN.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.SGN.DisabledForeColor = System.Drawing.Color.Gray;
@@ -108,7 +126,7 @@ namespace Instanalyzer.Views
             this.SGN.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
             this.SGN.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.SGN.HoverTextColor = System.Drawing.Color.Silver;
-            this.SGN.Location = new System.Drawing.Point(144, 213);
+            this.SGN.Location = new System.Drawing.Point(145, 207);
             this.SGN.MetroStyleManager = null;
             this.SGN.Name = "SGN";
             this.SGN.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(28)))));
@@ -123,6 +141,7 @@ namespace Instanalyzer.Views
             this.SGN.Text = "SIGN IN";
             this.SGN.ThemeAuthor = "Taiizor";
             this.SGN.ThemeName = "MetroDark";
+            this.SGN.Click += new System.EventHandler(this.SGN_Click);
             // 
             // lostCheckBox1
             // 
@@ -132,34 +151,143 @@ namespace Instanalyzer.Views
             this.lostCheckBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lostCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lostCheckBox1.ForeColor = System.Drawing.Color.Silver;
-            this.lostCheckBox1.Location = new System.Drawing.Point(5, 221);
+            this.lostCheckBox1.Location = new System.Drawing.Point(6, 215);
             this.lostCheckBox1.Name = "lostCheckBox1";
             this.lostCheckBox1.Size = new System.Drawing.Size(133, 23);
             this.lostCheckBox1.TabIndex = 4;
             this.lostCheckBox1.Text = "Remember Me";
             // 
-            // hopePictureBox1
+            // MAIMG
             // 
-            this.hopePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopePictureBox1.Image = global::Instanalyzer.Properties.Resources.Female;
-            this.hopePictureBox1.Location = new System.Drawing.Point(5, 39);
-            this.hopePictureBox1.Name = "hopePictureBox1";
-            this.hopePictureBox1.Size = new System.Drawing.Size(265, 49);
-            this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hopePictureBox1.TabIndex = 40;
-            this.hopePictureBox1.TabStop = false;
+            this.MAIMG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MAIMG.BackColor = System.Drawing.Color.Transparent;
+            this.MAIMG.Image = global::Instanalyzer.Properties.Resources.Female;
+            this.MAIMG.Location = new System.Drawing.Point(6, 33);
+            this.MAIMG.Name = "MAIMG";
+            this.MAIMG.Size = new System.Drawing.Size(265, 49);
+            this.MAIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.MAIMG.TabIndex = 40;
+            this.MAIMG.TabStop = false;
+            // 
+            // TBPG
+            // 
+            this.TBPG.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.TBPG.Controls.Add(this.MAIN);
+            this.TBPG.Controls.Add(this.MESSAGE);
+            this.TBPG.Controls.Add(this.WAIT);
+            this.TBPG.Depth = 0;
+            this.TBPG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TBPG.Location = new System.Drawing.Point(2, 36);
+            this.TBPG.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.TBPG.Multiline = true;
+            this.TBPG.Name = "TBPG";
+            this.TBPG.Padding = new System.Drawing.Point(0, 0);
+            this.TBPG.SelectedIndex = 0;
+            this.TBPG.Size = new System.Drawing.Size(285, 284);
+            this.TBPG.TabIndex = 41;
+            // 
+            // MAIN
+            // 
+            this.MAIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.MAIN.Controls.Add(this.AIL);
+            this.MAIN.Controls.Add(this.MAIMG);
+            this.MAIN.Controls.Add(this.USN);
+            this.MAIN.Controls.Add(this.lostCheckBox1);
+            this.MAIN.Controls.Add(this.PWD);
+            this.MAIN.Controls.Add(this.SGN);
+            this.MAIN.Location = new System.Drawing.Point(4, 4);
+            this.MAIN.Name = "MAIN";
+            this.MAIN.Padding = new System.Windows.Forms.Padding(3);
+            this.MAIN.Size = new System.Drawing.Size(277, 250);
+            this.MAIN.TabIndex = 0;
+            this.MAIN.Text = "MAIN";
+            // 
+            // MESSAGE
+            // 
+            this.MESSAGE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.MESSAGE.Controls.Add(this.MIMG);
+            this.MESSAGE.Controls.Add(this.MINFO);
+            this.MESSAGE.Controls.Add(this.MBACK);
+            this.MESSAGE.Location = new System.Drawing.Point(4, 4);
+            this.MESSAGE.Name = "MESSAGE";
+            this.MESSAGE.Padding = new System.Windows.Forms.Padding(3);
+            this.MESSAGE.Size = new System.Drawing.Size(277, 250);
+            this.MESSAGE.TabIndex = 1;
+            this.MESSAGE.Text = "MESSAGE";
+            // 
+            // MIMG
+            // 
+            this.MIMG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MIMG.BackColor = System.Drawing.Color.Transparent;
+            this.MIMG.Image = global::Instanalyzer.Properties.Resources.Biohazard;
+            this.MIMG.Location = new System.Drawing.Point(6, 33);
+            this.MIMG.Name = "MIMG";
+            this.MIMG.Size = new System.Drawing.Size(265, 49);
+            this.MIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.MIMG.TabIndex = 41;
+            this.MIMG.TabStop = false;
+            // 
+            // MINFO
+            // 
+            this.MINFO.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MINFO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.MINFO.Location = new System.Drawing.Point(6, 85);
+            this.MINFO.MetroStyleManager = null;
+            this.MINFO.Name = "MINFO";
+            this.MINFO.Size = new System.Drawing.Size(265, 119);
+            this.MINFO.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.MINFO.TabIndex = 10;
+            this.MINFO.Text = "MESSAGE";
+            this.MINFO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MINFO.ThemeAuthor = "Taiizor";
+            this.MINFO.ThemeName = "MetroDark";
+            // 
+            // MBACK
+            // 
+            this.MBACK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MBACK.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.MBACK.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.MBACK.DisabledForeColor = System.Drawing.Color.Gray;
+            this.MBACK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MBACK.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.MBACK.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.MBACK.HoverTextColor = System.Drawing.Color.Silver;
+            this.MBACK.Location = new System.Drawing.Point(6, 207);
+            this.MBACK.MetroStyleManager = null;
+            this.MBACK.Name = "MBACK";
+            this.MBACK.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(28)))));
+            this.MBACK.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
+            this.MBACK.NormalTextColor = System.Drawing.Color.Silver;
+            this.MBACK.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.MBACK.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.MBACK.PressTextColor = System.Drawing.Color.Silver;
+            this.MBACK.Size = new System.Drawing.Size(265, 38);
+            this.MBACK.Style = ReaLTaiizor.Enum.Metro.Style.Custom;
+            this.MBACK.TabIndex = 6;
+            this.MBACK.Text = "BACK";
+            this.MBACK.ThemeAuthor = "Taiizor";
+            this.MBACK.ThemeName = "MetroDark";
+            this.MBACK.Click += new System.EventHandler(this.MBACK_Click);
+            // 
+            // WAIT
+            // 
+            this.WAIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.WAIT.Location = new System.Drawing.Point(4, 4);
+            this.WAIT.Name = "WAIT";
+            this.WAIT.Size = new System.Drawing.Size(277, 250);
+            this.WAIT.TabIndex = 2;
+            this.WAIT.Text = "WAIT";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 257);
-            this.Controls.Add(this.hopePictureBox1);
-            this.Controls.Add(this.lostCheckBox1);
-            this.Controls.Add(this.SGN);
-            this.Controls.Add(this.PSW);
-            this.Controls.Add(this.AIL);
-            this.Controls.Add(this.USN);
+            this.ClientSize = new System.Drawing.Size(289, 322);
+            this.Controls.Add(this.TBPG);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Image = global::Instanalyzer.Properties.Resources.Login;
             this.MaximizeBox = false;
@@ -167,7 +295,11 @@ namespace Instanalyzer.Views
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Here You Can Login";
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MAIMG)).EndInit();
+            this.TBPG.ResumeLayout(false);
+            this.MAIN.ResumeLayout(false);
+            this.MESSAGE.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MIMG)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -176,9 +308,16 @@ namespace Instanalyzer.Views
 
         private ReaLTaiizor.Controls.HopeTextBox USN;
         private ReaLTaiizor.Controls.MetroLabel AIL;
-        private ReaLTaiizor.Controls.HopeTextBox PSW;
+        private ReaLTaiizor.Controls.HopeTextBox PWD;
         private ReaLTaiizor.Controls.MetroButton SGN;
         private ReaLTaiizor.Controls.LostCheckBox lostCheckBox1;
-        private ReaLTaiizor.Controls.HopePictureBox hopePictureBox1;
+        private ReaLTaiizor.Controls.HopePictureBox MAIMG;
+        private ReaLTaiizor.Controls.MaterialTabControl TBPG;
+        private System.Windows.Forms.TabPage MAIN;
+        private System.Windows.Forms.TabPage MESSAGE;
+        private System.Windows.Forms.TabPage WAIT;
+        private ReaLTaiizor.Controls.MetroLabel MINFO;
+        private ReaLTaiizor.Controls.MetroButton MBACK;
+        private ReaLTaiizor.Controls.HopePictureBox MIMG;
     }
 }
