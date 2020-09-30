@@ -3,11 +3,11 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Drawing;
+using ReaLTaiizor.Forms;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using ReaLTaiizor.Forms;
 
 namespace Instanalyzer.Views
 {
