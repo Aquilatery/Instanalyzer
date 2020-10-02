@@ -7,3 +7,5 @@
   <img src="https://raw.githubusercontent.com/Soferity/Instanalyzer/master/.screenshots/UI_3.png" />
   <img src="https://raw.githubusercontent.com/Soferity/Instanalyzer/master/.screenshots/UI_4.png" />
   <img src="https://raw.githubusercontent.com/Soferity/Instanalyzer/master/.screenshots/UI_5.png" />
+  <img src="https://raw.githubusercontent.com/Soferity/Instanalyzer/master/.screenshots/UI_6.png" />
+  <img src="https://raw.githubusercontent.com/Soferity/Instanalyzer/master/.screenshots/UI_7.png" />
