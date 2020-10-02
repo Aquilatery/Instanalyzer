@@ -1,73 +1,89 @@
 ﻿using System;
-using ReaLTaiizor.Forms;
+using System.Windows.Forms;
 
 namespace Instanalyzer.Views
 {
-    public partial class Login : LostForm
+    public partial class Login : Form
     {
+        private const string DefaultStatus = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
+        private long ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
+        private int FRAMEPI = 1;
+
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void FRAMET_Tick(object sender, EventArgs e)
+        {
+            switch (FRAMEPI++)
+            {
+                case 1:
+                    FRAMEP.Image = Properties.Resources.Frame2;
+                    break;
+                case 2:
+                    FRAMEP.Image = Properties.Resources.Frame3;
+                    break;
+                case 3:
+                    FRAMEP.Image = Properties.Resources.Frame4;
+                    break;
+                case 4:
+                    FRAMEP.Image = Properties.Resources.Frame5;
+                    break;
+                case 5:
+                    FRAMEP.Image = Properties.Resources.Frame1;
+                    FRAMEPI = 0;
+                    break;
+            }
         }
 
         private void SGN_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(USN.Text) && string.IsNullOrEmpty(PWD.Text))
             {
-                MINFO.Text = "Username and Password is Empty!";
-                TBPG.SelectedTab = MESSAGE;
+                SSBR.Text = "Username and Password is Empty!";
+                ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
             }
             else if (string.IsNullOrEmpty(USN.Text) && !string.IsNullOrEmpty(PWD.Text))
             {
-                MINFO.Text = "Username is Empty!";
-                TBPG.SelectedTab = MESSAGE;
+                SSBR.Text = "Username is Empty!";
+                ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
             }
             else if (!string.IsNullOrEmpty(USN.Text) && string.IsNullOrEmpty(PWD.Text))
             {
-                MINFO.Text = "Password is Empty!";
-                TBPG.SelectedTab = MESSAGE;
+                SSBR.Text = "Password is Empty!";
+                ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
             }
             else
             {
-                TBPG.SelectedTab = WAIT;
-                timer1.Enabled = true;
+                //
             }
         }
 
-        private void MBACK_Click(object sender, EventArgs e)
+        private void STATUST_Tick(object sender, EventArgs e)
         {
-            TBPG.SelectedTab = MAIN;
-        }
-
-        private void WTRY_Click(object sender, EventArgs e)
-        {
-            WTRY.Visible = false;
-            TBPG.SelectedTab = MAIN;
-            WINFO.Text = "Giriş Yapılıyor.\nPlease Wait..";
-        }
-
-        private void Timer1_Tick(object sender, EventArgs e)
-        {
-            timer1.Enabled = false;
-            if (Utils.Login.LoginControl(USN.Text, PWD.Text, MRMB.Checked))
+            try
             {
-                WINFO.Text = "Giriş Başarılı!\nYönlendiriliyorsunuz..";
-                ShowInTaskbar = false;
-                Visible = false;
-                Opacity = 0;
-                Main MN = new Main();
-                MN.Text = string.Format(MN.Text, USN.Text);
-                MN.ShowDialog();
-                ShowInTaskbar = true;
-                Visible = true;
-                Opacity = 1;
-                WTRY_Click(sender, e);
+                long Result = DateTimeOffset.UtcNow.ToUnixTimeSeconds() - ChangedStatus;
+                if (Result >= 3)
+                    SSBR.Text = DefaultStatus;
             }
-            else
+            catch (Exception Hata)
             {
-                WINFO.Text = "Giriş Başarısız!\nPlease Try Again..";
-                WTRY.Visible = true;
+                SSBR.Text = "Hata - " + Hata.Source + ": " + Hata.Message;
+                ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
             }
+        }
+
+        private void FPLL_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/accounts/password/reset");
+        }
+
+        private void RGLL_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/accounts/emailsignup");
         }
     }
 }

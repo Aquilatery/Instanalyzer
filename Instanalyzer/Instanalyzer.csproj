@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <!--<TargetFramework>net48</TargetFramework>-->
-    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
+    <TargetFrameworks>net48;net5.0</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
     <StartupObject>Instanalyzer.Instanalyzer</StartupObject>
@@ -41,7 +41,7 @@
     <InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)'=='net5.0-windows'">
+  <PropertyGroup Condition="'$(TargetFramework)'=='net5.0'">
     <DisableFody>true</DisableFody>
   </PropertyGroup>
 

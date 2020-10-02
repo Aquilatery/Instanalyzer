@@ -31,373 +31,351 @@ namespace Instanalyzer.Views
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.USN = new ReaLTaiizor.Controls.HopeTextBox();
-            this.AIL = new ReaLTaiizor.Controls.MetroLabel();
-            this.PWD = new ReaLTaiizor.Controls.HopeTextBox();
-            this.SGN = new ReaLTaiizor.Controls.MetroButton();
-            this.MRMB = new ReaLTaiizor.Controls.LostCheckBox();
-            this.MAIMG = new ReaLTaiizor.Controls.HopePictureBox();
-            this.TBPG = new ReaLTaiizor.Controls.MaterialTabControl();
-            this.MAIN = new System.Windows.Forms.TabPage();
-            this.MESSAGE = new System.Windows.Forms.TabPage();
-            this.MIMG = new ReaLTaiizor.Controls.HopePictureBox();
-            this.MINFO = new ReaLTaiizor.Controls.MetroLabel();
-            this.MBACK = new ReaLTaiizor.Controls.MetroButton();
-            this.WAIT = new System.Windows.Forms.TabPage();
-            this.WTRY = new ReaLTaiizor.Controls.MetroButton();
-            this.WINFO = new ReaLTaiizor.Controls.MetroLabel();
-            this.WIND = new ReaLTaiizor.Controls.ProgressIndicator();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.MAIMG)).BeginInit();
-            this.TBPG.SuspendLayout();
-            this.MAIN.SuspendLayout();
-            this.MESSAGE.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MIMG)).BeginInit();
-            this.WAIT.SuspendLayout();
+            this.NFRM = new ReaLTaiizor.Forms.NightForm();
+            this.SPNL = new ReaLTaiizor.Controls.LostBorderPanel();
+            this.RGLL = new ReaLTaiizor.Controls.NightLinkLabel();
+            this.NOAL = new ReaLTaiizor.Controls.NightLabel();
+            this.FRAMEP = new System.Windows.Forms.PictureBox();
+            this.FRAME = new System.Windows.Forms.PictureBox();
+            this.FPNL = new ReaLTaiizor.Controls.LostBorderPanel();
+            this.RMBR = new ReaLTaiizor.Controls.MaterialCheckBox();
+            this.PWD = new ReaLTaiizor.Controls.MaterialTextBox();
+            this.USN = new ReaLTaiizor.Controls.MaterialTextBox();
+            this.FPLL = new ReaLTaiizor.Controls.NightLinkLabel();
+            this.SGN = new ReaLTaiizor.Controls.MaterialButton();
+            this.IGLL = new System.Windows.Forms.PictureBox();
+            this.NCBX = new ReaLTaiizor.Controls.NightControlBox();
+            this.FRAMET = new System.Windows.Forms.Timer(this.components);
+            this.SSBR = new ReaLTaiizor.Controls.ForeverStatusBar();
+            this.STATUST = new System.Windows.Forms.Timer(this.components);
+            this.NFRM.SuspendLayout();
+            this.SPNL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FRAMEP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FRAME)).BeginInit();
+            this.FPNL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IGLL)).BeginInit();
             this.SuspendLayout();
             // 
-            // USN
+            // NFRM
             // 
-            this.USN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.USN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.USN.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.USN.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.USN.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.USN.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.USN.ForeColor = System.Drawing.Color.Silver;
-            this.USN.Hint = "Username";
-            this.USN.Location = new System.Drawing.Point(6, 119);
-            this.USN.MaxLength = 50;
-            this.USN.Multiline = false;
-            this.USN.Name = "USN";
-            this.USN.PasswordChar = '\0';
-            this.USN.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.USN.SelectedText = "";
-            this.USN.SelectionLength = 0;
-            this.USN.SelectionStart = 0;
-            this.USN.Size = new System.Drawing.Size(265, 38);
-            this.USN.TabIndex = 0;
-            this.USN.TabStop = false;
-            this.USN.Text = "ReaL";
-            this.USN.UseSystemPasswordChar = false;
+            this.NFRM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.NFRM.Controls.Add(this.SPNL);
+            this.NFRM.Controls.Add(this.FRAMEP);
+            this.NFRM.Controls.Add(this.FRAME);
+            this.NFRM.Controls.Add(this.FPNL);
+            this.NFRM.Controls.Add(this.NCBX);
+            this.NFRM.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NFRM.DrawIcon = true;
+            this.NFRM.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.NFRM.ForeColor = System.Drawing.SystemColors.Control;
+            this.NFRM.HeadColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.NFRM.Location = new System.Drawing.Point(0, 0);
+            this.NFRM.MinimumSize = new System.Drawing.Size(100, 42);
+            this.NFRM.Name = "NFRM";
+            this.NFRM.Padding = new System.Windows.Forms.Padding(0, 31, 0, 0);
+            this.NFRM.Size = new System.Drawing.Size(691, 411);
+            this.NFRM.TabIndex = 0;
+            this.NFRM.Text = "Here You Can Login";
+            this.NFRM.TextAlignment = ReaLTaiizor.Forms.NightForm.Alignment.Center;
+            this.NFRM.TitleBarTextColor = System.Drawing.Color.Black;
             // 
-            // AIL
+            // SPNL
             // 
-            this.AIL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AIL.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.AIL.Location = new System.Drawing.Point(6, 85);
-            this.AIL.MetroStyleManager = null;
-            this.AIL.Name = "AIL";
-            this.AIL.Size = new System.Drawing.Size(265, 31);
-            this.AIL.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
-            this.AIL.TabIndex = 9;
-            this.AIL.Text = "Account Information";
-            this.AIL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AIL.ThemeAuthor = "Taiizor";
-            this.AIL.ThemeName = "MetroDark";
+            this.SPNL.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SPNL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.SPNL.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SPNL.Controls.Add(this.RGLL);
+            this.SPNL.Controls.Add(this.NOAL);
+            this.SPNL.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.SPNL.ForeColor = System.Drawing.Color.White;
+            this.SPNL.Location = new System.Drawing.Point(305, 344);
+            this.SPNL.Name = "SPNL";
+            this.SPNL.Padding = new System.Windows.Forms.Padding(5);
+            this.SPNL.ShowText = false;
+            this.SPNL.Size = new System.Drawing.Size(383, 39);
+            this.SPNL.TabIndex = 4;
+            this.SPNL.Text = "SPNL";
+            // 
+            // RGLL
+            // 
+            this.RGLL.ActiveLinkColor = System.Drawing.Color.SteelBlue;
+            this.RGLL.BackColor = System.Drawing.Color.Transparent;
+            this.RGLL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RGLL.Dock = System.Windows.Forms.DockStyle.Right;
+            this.RGLL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.RGLL.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.RGLL.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.RGLL.Location = new System.Drawing.Point(198, 0);
+            this.RGLL.Margin = new System.Windows.Forms.Padding(0);
+            this.RGLL.Name = "RGLL";
+            this.RGLL.Size = new System.Drawing.Size(185, 39);
+            this.RGLL.TabIndex = 5;
+            this.RGLL.TabStop = true;
+            this.RGLL.Text = "Kaydol";
+            this.RGLL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RGLL.VisitedLinkColor = System.Drawing.Color.RoyalBlue;
+            this.RGLL.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.RGLL_LinkClicked);
+            // 
+            // NOAL
+            // 
+            this.NOAL.BackColor = System.Drawing.Color.Transparent;
+            this.NOAL.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.NOAL.Dock = System.Windows.Forms.DockStyle.Left;
+            this.NOAL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.NOAL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.NOAL.Location = new System.Drawing.Point(0, 0);
+            this.NOAL.Margin = new System.Windows.Forms.Padding(0);
+            this.NOAL.Name = "NOAL";
+            this.NOAL.Size = new System.Drawing.Size(198, 39);
+            this.NOAL.TabIndex = 0;
+            this.NOAL.Text = "Hesabın yok mu?";
+            this.NOAL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // FRAMEP
+            // 
+            this.FRAMEP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FRAMEP.BackColor = System.Drawing.Color.Transparent;
+            this.FRAMEP.Image = global::Instanalyzer.Properties.Resources.Frame1;
+            this.FRAMEP.Location = new System.Drawing.Point(107, 89);
+            this.FRAMEP.Name = "FRAMEP";
+            this.FRAMEP.Size = new System.Drawing.Size(137, 244);
+            this.FRAMEP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FRAMEP.TabIndex = 3;
+            this.FRAMEP.TabStop = false;
+            // 
+            // FRAME
+            // 
+            this.FRAME.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FRAME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.FRAME.Image = global::Instanalyzer.Properties.Resources.Frame;
+            this.FRAME.Location = new System.Drawing.Point(3, 34);
+            this.FRAME.Name = "FRAME";
+            this.FRAME.Size = new System.Drawing.Size(296, 349);
+            this.FRAME.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.FRAME.TabIndex = 2;
+            this.FRAME.TabStop = false;
+            // 
+            // FPNL
+            // 
+            this.FPNL.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FPNL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.FPNL.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.FPNL.Controls.Add(this.RMBR);
+            this.FPNL.Controls.Add(this.PWD);
+            this.FPNL.Controls.Add(this.USN);
+            this.FPNL.Controls.Add(this.FPLL);
+            this.FPNL.Controls.Add(this.SGN);
+            this.FPNL.Controls.Add(this.IGLL);
+            this.FPNL.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.FPNL.ForeColor = System.Drawing.Color.White;
+            this.FPNL.Location = new System.Drawing.Point(305, 34);
+            this.FPNL.Name = "FPNL";
+            this.FPNL.Padding = new System.Windows.Forms.Padding(5);
+            this.FPNL.ShowText = false;
+            this.FPNL.Size = new System.Drawing.Size(383, 299);
+            this.FPNL.TabIndex = 1;
+            this.FPNL.Text = "FPNL";
+            // 
+            // RMBR
+            // 
+            this.RMBR.AutoSize = true;
+            this.RMBR.Checked = true;
+            this.RMBR.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.RMBR.Depth = 0;
+            this.RMBR.Location = new System.Drawing.Point(21, 209);
+            this.RMBR.Margin = new System.Windows.Forms.Padding(0);
+            this.RMBR.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.RMBR.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.RMBR.Name = "RMBR";
+            this.RMBR.Ripple = true;
+            this.RMBR.Size = new System.Drawing.Size(137, 37);
+            this.RMBR.TabIndex = 13;
+            this.RMBR.Text = "Remember Me";
+            this.RMBR.UseVisualStyleBackColor = true;
             // 
             // PWD
             // 
-            this.PWD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PWD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.PWD.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.PWD.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.PWD.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PWD.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.PWD.ForeColor = System.Drawing.Color.Silver;
-            this.PWD.Hint = "Password";
-            this.PWD.Location = new System.Drawing.Point(6, 163);
+            this.PWD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PWD.Depth = 0;
+            this.PWD.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.PWD.Hint = "Şifre";
+            this.PWD.Location = new System.Drawing.Point(21, 149);
             this.PWD.MaxLength = 100;
+            this.PWD.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             this.PWD.Multiline = false;
             this.PWD.Name = "PWD";
-            this.PWD.PasswordChar = '\0';
-            this.PWD.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.PWD.SelectedText = "";
-            this.PWD.SelectionLength = 0;
-            this.PWD.SelectionStart = 0;
-            this.PWD.Size = new System.Drawing.Size(265, 38);
-            this.PWD.TabIndex = 1;
-            this.PWD.TabStop = false;
-            this.PWD.Text = "Taiizor";
-            this.PWD.UseSystemPasswordChar = true;
+            this.PWD.Password = true;
+            this.PWD.Size = new System.Drawing.Size(340, 50);
+            this.PWD.TabIndex = 11;
+            this.PWD.Text = "";
+            this.PWD.UseAccent = false;
+            // 
+            // USN
+            // 
+            this.USN.BackColor = System.Drawing.SystemColors.Window;
+            this.USN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.USN.Depth = 0;
+            this.USN.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.USN.Hint = "Telefon numarası, kullanıcı adı veya e-posta";
+            this.USN.Location = new System.Drawing.Point(21, 93);
+            this.USN.MaxLength = 100;
+            this.USN.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.USN.Multiline = false;
+            this.USN.Name = "USN";
+            this.USN.Size = new System.Drawing.Size(340, 50);
+            this.USN.TabIndex = 10;
+            this.USN.Text = "";
+            // 
+            // FPLL
+            // 
+            this.FPLL.ActiveLinkColor = System.Drawing.Color.SteelBlue;
+            this.FPLL.BackColor = System.Drawing.Color.Transparent;
+            this.FPLL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FPLL.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.FPLL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.FPLL.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.FPLL.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.FPLL.Location = new System.Drawing.Point(0, 264);
+            this.FPLL.Margin = new System.Windows.Forms.Padding(0);
+            this.FPLL.Name = "FPLL";
+            this.FPLL.Size = new System.Drawing.Size(383, 35);
+            this.FPLL.TabIndex = 9;
+            this.FPLL.TabStop = true;
+            this.FPLL.Text = "Şifreni mi unuttun?";
+            this.FPLL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FPLL.VisitedLinkColor = System.Drawing.Color.RoyalBlue;
+            this.FPLL.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.FPLL_LinkClicked);
             // 
             // SGN
             // 
-            this.SGN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SGN.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.SGN.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.SGN.DisabledForeColor = System.Drawing.Color.Gray;
-            this.SGN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SGN.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.SGN.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.SGN.HoverTextColor = System.Drawing.Color.Silver;
-            this.SGN.Location = new System.Drawing.Point(145, 207);
-            this.SGN.MetroStyleManager = null;
+            this.SGN.AutoSize = false;
+            this.SGN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.SGN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SGN.Depth = 0;
+            this.SGN.DrawShadows = true;
+            this.SGN.HighEmphasis = true;
+            this.SGN.Icon = null;
+            this.SGN.Location = new System.Drawing.Point(204, 208);
+            this.SGN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.SGN.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.SGN.Name = "SGN";
-            this.SGN.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(28)))));
-            this.SGN.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.SGN.NormalTextColor = System.Drawing.Color.Silver;
-            this.SGN.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.SGN.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.SGN.PressTextColor = System.Drawing.Color.Silver;
-            this.SGN.Size = new System.Drawing.Size(126, 38);
-            this.SGN.Style = ReaLTaiizor.Enum.Metro.Style.Custom;
-            this.SGN.TabIndex = 5;
-            this.SGN.Text = "SIGN IN";
-            this.SGN.ThemeAuthor = "Taiizor";
-            this.SGN.ThemeName = "MetroDark";
+            this.SGN.Size = new System.Drawing.Size(157, 36);
+            this.SGN.TabIndex = 7;
+            this.SGN.Text = "Giriş Yap";
+            this.SGN.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.SGN.UseAccentColor = false;
+            this.SGN.UseVisualStyleBackColor = true;
             this.SGN.Click += new System.EventHandler(this.SGN_Click);
             // 
-            // MRMB
+            // IGLL
             // 
-            this.MRMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.MRMB.Checked = true;
-            this.MRMB.CheckedColor = System.Drawing.Color.DodgerBlue;
-            this.MRMB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MRMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.MRMB.ForeColor = System.Drawing.Color.Silver;
-            this.MRMB.Location = new System.Drawing.Point(6, 215);
-            this.MRMB.Name = "MRMB";
-            this.MRMB.Size = new System.Drawing.Size(133, 23);
-            this.MRMB.TabIndex = 4;
-            this.MRMB.Text = "Remember Me";
+            this.IGLL.BackColor = System.Drawing.Color.Transparent;
+            this.IGLL.Image = global::Instanalyzer.Properties.Resources.Instagram;
+            this.IGLL.Location = new System.Drawing.Point(21, 13);
+            this.IGLL.Name = "IGLL";
+            this.IGLL.Size = new System.Drawing.Size(340, 66);
+            this.IGLL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IGLL.TabIndex = 4;
+            this.IGLL.TabStop = false;
             // 
-            // MAIMG
+            // NCBX
             // 
-            this.MAIMG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MAIMG.BackColor = System.Drawing.Color.Transparent;
-            this.MAIMG.Image = global::Instanalyzer.Properties.Resources.Female;
-            this.MAIMG.Location = new System.Drawing.Point(6, 32);
-            this.MAIMG.Name = "MAIMG";
-            this.MAIMG.Size = new System.Drawing.Size(265, 50);
-            this.MAIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.MAIMG.TabIndex = 40;
-            this.MAIMG.TabStop = false;
+            this.NCBX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.NCBX.BackColor = System.Drawing.Color.Transparent;
+            this.NCBX.CloseHoverColor = System.Drawing.Color.Crimson;
+            this.NCBX.CloseHoverForeColor = System.Drawing.Color.White;
+            this.NCBX.Cursor = System.Windows.Forms.Cursors.Default;
+            this.NCBX.DefaultLocation = true;
+            this.NCBX.DisableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            this.NCBX.DisableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.NCBX.EnableCloseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.NCBX.EnableMaximizeButton = true;
+            this.NCBX.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.NCBX.EnableMinimizeButton = true;
+            this.NCBX.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.NCBX.Location = new System.Drawing.Point(552, 0);
+            this.NCBX.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.NCBX.MaximizeHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.NCBX.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.NCBX.MinimizeHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.NCBX.Name = "NCBX";
+            this.NCBX.Size = new System.Drawing.Size(139, 31);
+            this.NCBX.TabIndex = 0;
             // 
-            // TBPG
+            // FRAMET
             // 
-            this.TBPG.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.TBPG.Controls.Add(this.MAIN);
-            this.TBPG.Controls.Add(this.MESSAGE);
-            this.TBPG.Controls.Add(this.WAIT);
-            this.TBPG.Depth = 0;
-            this.TBPG.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TBPG.Location = new System.Drawing.Point(2, 36);
-            this.TBPG.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.TBPG.Multiline = true;
-            this.TBPG.Name = "TBPG";
-            this.TBPG.Padding = new System.Drawing.Point(0, 0);
-            this.TBPG.SelectedIndex = 0;
-            this.TBPG.Size = new System.Drawing.Size(285, 284);
-            this.TBPG.TabIndex = 41;
+            this.FRAMET.Enabled = true;
+            this.FRAMET.Interval = 2500;
+            this.FRAMET.Tick += new System.EventHandler(this.FRAMET_Tick);
             // 
-            // MAIN
+            // SSBR
             // 
-            this.MAIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.MAIN.Controls.Add(this.AIL);
-            this.MAIN.Controls.Add(this.MAIMG);
-            this.MAIN.Controls.Add(this.USN);
-            this.MAIN.Controls.Add(this.MRMB);
-            this.MAIN.Controls.Add(this.PWD);
-            this.MAIN.Controls.Add(this.SGN);
-            this.MAIN.Location = new System.Drawing.Point(4, 4);
-            this.MAIN.Name = "MAIN";
-            this.MAIN.Padding = new System.Windows.Forms.Padding(3);
-            this.MAIN.Size = new System.Drawing.Size(277, 250);
-            this.MAIN.TabIndex = 0;
-            this.MAIN.Text = "MAIN";
+            this.SSBR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.SSBR.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.SSBR.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.SSBR.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.SSBR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(108)))), ((int)(((byte)(117)))));
+            this.SSBR.Location = new System.Drawing.Point(0, 388);
+            this.SSBR.Name = "SSBR";
+            this.SSBR.RectColor = System.Drawing.Color.SeaGreen;
+            this.SSBR.ShowTimeDate = true;
+            this.SSBR.Size = new System.Drawing.Size(691, 23);
+            this.SSBR.TabIndex = 1;
+            this.SSBR.Text = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
+            this.SSBR.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
+            this.SSBR.TimeColor = System.Drawing.Color.Crimson;
+            this.SSBR.TimeFormat = "HH:mm:ss";
             // 
-            // MESSAGE
+            // STATUST
             // 
-            this.MESSAGE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.MESSAGE.Controls.Add(this.MIMG);
-            this.MESSAGE.Controls.Add(this.MINFO);
-            this.MESSAGE.Controls.Add(this.MBACK);
-            this.MESSAGE.Location = new System.Drawing.Point(4, 4);
-            this.MESSAGE.Name = "MESSAGE";
-            this.MESSAGE.Padding = new System.Windows.Forms.Padding(3);
-            this.MESSAGE.Size = new System.Drawing.Size(277, 250);
-            this.MESSAGE.TabIndex = 1;
-            this.MESSAGE.Text = "MESSAGE";
-            // 
-            // MIMG
-            // 
-            this.MIMG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MIMG.BackColor = System.Drawing.Color.Transparent;
-            this.MIMG.Image = global::Instanalyzer.Properties.Resources.Biohazard;
-            this.MIMG.Location = new System.Drawing.Point(6, 32);
-            this.MIMG.Name = "MIMG";
-            this.MIMG.Size = new System.Drawing.Size(265, 50);
-            this.MIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.MIMG.TabIndex = 41;
-            this.MIMG.TabStop = false;
-            // 
-            // MINFO
-            // 
-            this.MINFO.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MINFO.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.MINFO.Location = new System.Drawing.Point(6, 85);
-            this.MINFO.MetroStyleManager = null;
-            this.MINFO.Name = "MINFO";
-            this.MINFO.Size = new System.Drawing.Size(265, 119);
-            this.MINFO.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
-            this.MINFO.TabIndex = 10;
-            this.MINFO.Text = "MESSAGE";
-            this.MINFO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MINFO.ThemeAuthor = "Taiizor";
-            this.MINFO.ThemeName = "MetroDark";
-            // 
-            // MBACK
-            // 
-            this.MBACK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MBACK.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.MBACK.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.MBACK.DisabledForeColor = System.Drawing.Color.Gray;
-            this.MBACK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MBACK.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.MBACK.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.MBACK.HoverTextColor = System.Drawing.Color.Silver;
-            this.MBACK.Location = new System.Drawing.Point(6, 207);
-            this.MBACK.MetroStyleManager = null;
-            this.MBACK.Name = "MBACK";
-            this.MBACK.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(28)))));
-            this.MBACK.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.MBACK.NormalTextColor = System.Drawing.Color.Silver;
-            this.MBACK.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.MBACK.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.MBACK.PressTextColor = System.Drawing.Color.Silver;
-            this.MBACK.Size = new System.Drawing.Size(265, 38);
-            this.MBACK.Style = ReaLTaiizor.Enum.Metro.Style.Custom;
-            this.MBACK.TabIndex = 6;
-            this.MBACK.Text = "BACK";
-            this.MBACK.ThemeAuthor = "Taiizor";
-            this.MBACK.ThemeName = "MetroDark";
-            this.MBACK.Click += new System.EventHandler(this.MBACK_Click);
-            // 
-            // WAIT
-            // 
-            this.WAIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.WAIT.Controls.Add(this.WTRY);
-            this.WAIT.Controls.Add(this.WINFO);
-            this.WAIT.Controls.Add(this.WIND);
-            this.WAIT.Location = new System.Drawing.Point(4, 4);
-            this.WAIT.Name = "WAIT";
-            this.WAIT.Size = new System.Drawing.Size(277, 250);
-            this.WAIT.TabIndex = 2;
-            this.WAIT.Text = "WAIT";
-            // 
-            // WTRY
-            // 
-            this.WTRY.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.WTRY.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.WTRY.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.WTRY.DisabledForeColor = System.Drawing.Color.Gray;
-            this.WTRY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.WTRY.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.WTRY.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.WTRY.HoverTextColor = System.Drawing.Color.Silver;
-            this.WTRY.Location = new System.Drawing.Point(6, 207);
-            this.WTRY.MetroStyleManager = null;
-            this.WTRY.Name = "WTRY";
-            this.WTRY.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(28)))));
-            this.WTRY.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
-            this.WTRY.NormalTextColor = System.Drawing.Color.Silver;
-            this.WTRY.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.WTRY.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
-            this.WTRY.PressTextColor = System.Drawing.Color.Silver;
-            this.WTRY.Size = new System.Drawing.Size(265, 38);
-            this.WTRY.Style = ReaLTaiizor.Enum.Metro.Style.Custom;
-            this.WTRY.TabIndex = 12;
-            this.WTRY.Text = "TRY AGAIN";
-            this.WTRY.ThemeAuthor = "Taiizor";
-            this.WTRY.ThemeName = "MetroDark";
-            this.WTRY.Visible = false;
-            this.WTRY.Click += new System.EventHandler(this.WTRY_Click);
-            // 
-            // WINFO
-            // 
-            this.WINFO.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.WINFO.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.WINFO.Location = new System.Drawing.Point(6, 85);
-            this.WINFO.MetroStyleManager = null;
-            this.WINFO.Name = "WINFO";
-            this.WINFO.Size = new System.Drawing.Size(265, 119);
-            this.WINFO.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
-            this.WINFO.TabIndex = 11;
-            this.WINFO.Text = "Giriş Yapılıyor.\r\nPlease Wait..";
-            this.WINFO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.WINFO.ThemeAuthor = "Taiizor";
-            this.WINFO.ThemeName = "MetroDark";
-            // 
-            // WIND
-            // 
-            this.WIND.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.WIND.Location = new System.Drawing.Point(115, 32);
-            this.WIND.MaximumSize = new System.Drawing.Size(50, 50);
-            this.WIND.MinimumSize = new System.Drawing.Size(50, 50);
-            this.WIND.Name = "WIND";
-            this.WIND.P_AnimationColor = System.Drawing.Color.DimGray;
-            this.WIND.P_AnimationSpeed = 100;
-            this.WIND.P_BaseColor = System.Drawing.Color.DarkGray;
-            this.WIND.Size = new System.Drawing.Size(50, 50);
-            this.WIND.TabIndex = 0;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 3000;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.STATUST.Enabled = true;
+            this.STATUST.Interval = 1000;
+            this.STATUST.Tick += new System.EventHandler(this.STATUST_Tick);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(289, 322);
-            this.Controls.Add(this.TBPG);
+            this.ClientSize = new System.Drawing.Size(691, 411);
+            this.Controls.Add(this.SSBR);
+            this.Controls.Add(this.NFRM);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Image = global::Instanalyzer.Properties.Resources.Login;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1366, 768);
             this.Name = "Login";
-            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Here You Can Login";
-            ((System.ComponentModel.ISupportInitialize)(this.MAIMG)).EndInit();
-            this.TBPG.ResumeLayout(false);
-            this.MAIN.ResumeLayout(false);
-            this.MESSAGE.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MIMG)).EndInit();
-            this.WAIT.ResumeLayout(false);
+            this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.NFRM.ResumeLayout(false);
+            this.SPNL.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.FRAMEP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FRAME)).EndInit();
+            this.FPNL.ResumeLayout(false);
+            this.FPNL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IGLL)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private ReaLTaiizor.Controls.HopeTextBox USN;
-        private ReaLTaiizor.Controls.MetroLabel AIL;
-        private ReaLTaiizor.Controls.HopeTextBox PWD;
-        private ReaLTaiizor.Controls.MetroButton SGN;
-        private ReaLTaiizor.Controls.LostCheckBox MRMB;
-        private ReaLTaiizor.Controls.HopePictureBox MAIMG;
-        private ReaLTaiizor.Controls.MaterialTabControl TBPG;
-        private System.Windows.Forms.TabPage MAIN;
-        private System.Windows.Forms.TabPage MESSAGE;
-        private System.Windows.Forms.TabPage WAIT;
-        private ReaLTaiizor.Controls.MetroLabel MINFO;
-        private ReaLTaiizor.Controls.MetroButton MBACK;
-        private ReaLTaiizor.Controls.HopePictureBox MIMG;
-        private ReaLTaiizor.Controls.ProgressIndicator WIND;
-        private ReaLTaiizor.Controls.MetroLabel WINFO;
-        private ReaLTaiizor.Controls.MetroButton WTRY;
-        private System.Windows.Forms.Timer timer1;
+        private ReaLTaiizor.Forms.NightForm NFRM;
+        private ReaLTaiizor.Controls.NightControlBox NCBX;
+        private ReaLTaiizor.Controls.LostBorderPanel FPNL;
+        private ReaLTaiizor.Controls.LostBorderPanel SPNL;
+        private ReaLTaiizor.Controls.NightLinkLabel RGLL;
+        private ReaLTaiizor.Controls.NightLabel NOAL;
+        private System.Windows.Forms.PictureBox FRAMEP;
+        private System.Windows.Forms.PictureBox FRAME;
+        private System.Windows.Forms.Timer FRAMET;
+        private System.Windows.Forms.PictureBox IGLL;
+        private ReaLTaiizor.Controls.MaterialButton SGN;
+        private ReaLTaiizor.Controls.NightLinkLabel FPLL;
+        private ReaLTaiizor.Controls.MaterialTextBox USN;
+        private ReaLTaiizor.Controls.MaterialCheckBox RMBR;
+        private ReaLTaiizor.Controls.MaterialTextBox PWD;
+        private ReaLTaiizor.Controls.ForeverStatusBar SSBR;
+        private System.Windows.Forms.Timer STATUST;
     }
 }
