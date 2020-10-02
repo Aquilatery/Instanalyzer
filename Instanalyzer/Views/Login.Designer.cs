@@ -73,7 +73,7 @@ namespace Instanalyzer.Views
             this.NFRM.MinimumSize = new System.Drawing.Size(100, 42);
             this.NFRM.Name = "NFRM";
             this.NFRM.Padding = new System.Windows.Forms.Padding(0, 31, 0, 0);
-            this.NFRM.Size = new System.Drawing.Size(691, 411);
+            this.NFRM.Size = new System.Drawing.Size(751, 471);
             this.NFRM.TabIndex = 0;
             this.NFRM.Text = "Here You Can Login";
             this.NFRM.TextAlignment = ReaLTaiizor.Forms.NightForm.Alignment.Center;
@@ -88,7 +88,7 @@ namespace Instanalyzer.Views
             this.SPNL.Controls.Add(this.NOAL);
             this.SPNL.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.SPNL.ForeColor = System.Drawing.Color.White;
-            this.SPNL.Location = new System.Drawing.Point(305, 344);
+            this.SPNL.Location = new System.Drawing.Point(335, 374);
             this.SPNL.Name = "SPNL";
             this.SPNL.Padding = new System.Windows.Forms.Padding(5);
             this.SPNL.ShowText = false;
@@ -136,9 +136,9 @@ namespace Instanalyzer.Views
             this.FRAMEP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.FRAMEP.BackColor = System.Drawing.Color.Transparent;
             this.FRAMEP.Image = global::Instanalyzer.Properties.Resources.Frame1;
-            this.FRAMEP.Location = new System.Drawing.Point(107, 89);
+            this.FRAMEP.Location = new System.Drawing.Point(135, 118);
             this.FRAMEP.Name = "FRAMEP";
-            this.FRAMEP.Size = new System.Drawing.Size(137, 244);
+            this.FRAMEP.Size = new System.Drawing.Size(139, 246);
             this.FRAMEP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FRAMEP.TabIndex = 3;
             this.FRAMEP.TabStop = false;
@@ -148,7 +148,7 @@ namespace Instanalyzer.Views
             this.FRAME.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.FRAME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.FRAME.Image = global::Instanalyzer.Properties.Resources.Frame;
-            this.FRAME.Location = new System.Drawing.Point(3, 34);
+            this.FRAME.Location = new System.Drawing.Point(33, 64);
             this.FRAME.Name = "FRAME";
             this.FRAME.Size = new System.Drawing.Size(296, 349);
             this.FRAME.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -168,7 +168,7 @@ namespace Instanalyzer.Views
             this.FPNL.Controls.Add(this.IGLL);
             this.FPNL.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.FPNL.ForeColor = System.Drawing.Color.White;
-            this.FPNL.Location = new System.Drawing.Point(305, 34);
+            this.FPNL.Location = new System.Drawing.Point(335, 64);
             this.FPNL.Name = "FPNL";
             this.FPNL.Padding = new System.Windows.Forms.Padding(5);
             this.FPNL.ShowText = false;
@@ -293,7 +293,7 @@ namespace Instanalyzer.Views
             this.NCBX.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.NCBX.EnableMinimizeButton = true;
             this.NCBX.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.NCBX.Location = new System.Drawing.Point(552, 0);
+            this.NCBX.Location = new System.Drawing.Point(612, 0);
             this.NCBX.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.NCBX.MaximizeHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.NCBX.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
@@ -315,11 +315,11 @@ namespace Instanalyzer.Views
             this.SSBR.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.SSBR.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.SSBR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(108)))), ((int)(((byte)(117)))));
-            this.SSBR.Location = new System.Drawing.Point(0, 388);
+            this.SSBR.Location = new System.Drawing.Point(0, 448);
             this.SSBR.Name = "SSBR";
             this.SSBR.RectColor = System.Drawing.Color.SeaGreen;
             this.SSBR.ShowTimeDate = true;
-            this.SSBR.Size = new System.Drawing.Size(691, 23);
+            this.SSBR.Size = new System.Drawing.Size(751, 23);
             this.SSBR.TabIndex = 1;
             this.SSBR.Text = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
             this.SSBR.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
@@ -336,13 +336,12 @@ namespace Instanalyzer.Views
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 411);
+            this.ClientSize = new System.Drawing.Size(751, 471);
             this.Controls.Add(this.SSBR);
             this.Controls.Add(this.NFRM);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1366, 768);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Here You Can Login";
