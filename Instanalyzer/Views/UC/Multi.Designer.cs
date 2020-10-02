@@ -29,32 +29,11 @@ namespace Instanalyzer.Views.UC
         /// </summary>
         private void InitializeComponent()
         {
-            this.FPLL = new ReaLTaiizor.Controls.NightLinkLabel();
             this.IGLL = new System.Windows.Forms.PictureBox();
             this.metroEllipse1 = new ReaLTaiizor.Controls.MetroEllipse();
             this.royalEllipseButton1 = new ReaLTaiizor.Controls.RoyalEllipseButton();
             ((System.ComponentModel.ISupportInitialize)(this.IGLL)).BeginInit();
             this.SuspendLayout();
-            // 
-            // FPLL
-            // 
-            this.FPLL.ActiveLinkColor = System.Drawing.Color.SteelBlue;
-            this.FPLL.BackColor = System.Drawing.Color.Transparent;
-            this.FPLL.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FPLL.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.FPLL.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.FPLL.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.FPLL.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.FPLL.Location = new System.Drawing.Point(0, 264);
-            this.FPLL.Margin = new System.Windows.Forms.Padding(0);
-            this.FPLL.Name = "FPLL";
-            this.FPLL.Size = new System.Drawing.Size(383, 35);
-            this.FPLL.TabIndex = 16;
-            this.FPLL.TabStop = true;
-            this.FPLL.Text = "Şifreni mi unuttun?";
-            this.FPLL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.FPLL.VisitedLinkColor = System.Drawing.Color.RoyalBlue;
-            this.FPLL.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.FPLL_LinkClicked);
             // 
             // IGLL
             // 
@@ -122,7 +101,6 @@ namespace Instanalyzer.Views.UC
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.Controls.Add(this.royalEllipseButton1);
             this.Controls.Add(this.metroEllipse1);
-            this.Controls.Add(this.FPLL);
             this.Controls.Add(this.IGLL);
             this.Name = "Multi";
             this.Size = new System.Drawing.Size(383, 299);
@@ -132,7 +110,6 @@ namespace Instanalyzer.Views.UC
         }
 
         #endregion
-        private ReaLTaiizor.Controls.NightLinkLabel FPLL;
         private System.Windows.Forms.PictureBox IGLL;
         private ReaLTaiizor.Controls.MetroEllipse metroEllipse1;
         private ReaLTaiizor.Controls.RoyalEllipseButton royalEllipseButton1;

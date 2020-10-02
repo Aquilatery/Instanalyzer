@@ -1,6 +1,4 @@
-﻿using System;
-using Instanalyzer.Helpers;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Instanalyzer.Views.UC
 {
@@ -9,11 +7,6 @@ namespace Instanalyzer.Views.UC
         public Multi()
         {
             InitializeComponent();
-        }
-
-        private void FPLL_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://www.instagram.com/accounts/password/reset");
         }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using Instanalyzer.Views;
 using System.Windows.Forms;
 
@@ -6,6 +7,8 @@ namespace Instanalyzer
 {
     static class Instanalyzer
     {
+        private static readonly Mutex MTX = new Mutex(true, "{Instanalyzer - Instagram Analyzer}");
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -17,7 +20,13 @@ namespace Instanalyzer
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             #endif
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            if (MTX.WaitOne(TimeSpan.Zero, true))
+            {
+                MTX.ReleaseMutex();
+                Application.Run(new Login());
+            }
+            else
+                MessageBox.Show("Already Open!", "Instanalyzer", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

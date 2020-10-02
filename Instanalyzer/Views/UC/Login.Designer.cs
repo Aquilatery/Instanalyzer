@@ -42,13 +42,13 @@ namespace Instanalyzer.Views.UC
             this.RGLL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.RGLL.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.RGLL.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.RGLL.Location = new System.Drawing.Point(198, 0);
+            this.RGLL.Location = new System.Drawing.Point(208, 0);
             this.RGLL.Margin = new System.Windows.Forms.Padding(0);
             this.RGLL.Name = "RGLL";
-            this.RGLL.Size = new System.Drawing.Size(185, 39);
+            this.RGLL.Size = new System.Drawing.Size(175, 39);
             this.RGLL.TabIndex = 7;
             this.RGLL.TabStop = true;
-            this.RGLL.Text = "Giriş Yap";
+            this.RGLL.Text = "Hesap Ekle";
             this.RGLL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RGLL.VisitedLinkColor = System.Drawing.Color.RoyalBlue;
             this.RGLL.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.RGLL_LinkClicked);
@@ -63,9 +63,9 @@ namespace Instanalyzer.Views.UC
             this.NOAL.Location = new System.Drawing.Point(0, 0);
             this.NOAL.Margin = new System.Windows.Forms.Padding(0);
             this.NOAL.Name = "NOAL";
-            this.NOAL.Size = new System.Drawing.Size(198, 39);
+            this.NOAL.Size = new System.Drawing.Size(208, 39);
             this.NOAL.TabIndex = 6;
-            this.NOAL.Text = "Hesabın var mı?";
+            this.NOAL.Text = "Başka hesabın mı var?";
             this.NOAL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Login
