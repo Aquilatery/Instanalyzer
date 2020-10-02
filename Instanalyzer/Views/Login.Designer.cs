@@ -169,7 +169,7 @@ namespace Instanalyzer.Views
             this.SSBR.TabIndex = 1;
             this.SSBR.Text = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
             this.SSBR.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
-            this.SSBR.TimeColor = System.Drawing.Color.Crimson;
+            this.SSBR.TimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(85)))), ((int)(((byte)(95)))));
             this.SSBR.TimeFormat = "HH:mm:ss";
             // 
             // STATUST

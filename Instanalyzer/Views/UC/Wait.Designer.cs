@@ -29,12 +29,14 @@ namespace Instanalyzer.Views.UC
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.PIND = new ReaLTaiizor.Controls.ProgressIndicator();
             this.WMLBL = new ReaLTaiizor.Controls.MetroLabel();
             this.UNNS = new ReaLTaiizor.Controls.MetroLabel();
             this.IGLL = new System.Windows.Forms.PictureBox();
             this.PP = new ReaLTaiizor.Controls.MetroEllipse();
             this.GIF = new System.Windows.Forms.PictureBox();
+            this.DOTT = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.IGLL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GIF)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +65,7 @@ namespace Instanalyzer.Views.UC
             this.WMLBL.Size = new System.Drawing.Size(340, 41);
             this.WMLBL.Style = ReaLTaiizor.Enum.Metro.Style.Light;
             this.WMLBL.TabIndex = 16;
-            this.WMLBL.Text = "Giriş Yapılıyor. Lütfen Bekleyin..";
+            this.WMLBL.Text = "Giriş Yapılıyor. Lütfen Bekleyin.";
             this.WMLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.WMLBL.ThemeAuthor = "Taiizor";
             this.WMLBL.ThemeName = "MetroLite";
@@ -136,6 +138,12 @@ namespace Instanalyzer.Views.UC
             this.GIF.TabIndex = 21;
             this.GIF.TabStop = false;
             // 
+            // DOTT
+            // 
+            this.DOTT.Enabled = true;
+            this.DOTT.Interval = 250;
+            this.DOTT.Tick += new System.EventHandler(this.DOTT_Tick);
+            // 
             // Wait
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -162,5 +170,6 @@ namespace Instanalyzer.Views.UC
         private ReaLTaiizor.Controls.MetroEllipse PP;
         private ReaLTaiizor.Controls.MetroLabel UNNS;
         private System.Windows.Forms.PictureBox GIF;
+        private System.Windows.Forms.Timer DOTT;
     }
 }

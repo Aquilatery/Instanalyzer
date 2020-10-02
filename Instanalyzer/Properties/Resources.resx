@@ -208,6 +208,9 @@
   <data name="PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ThankYou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Views\Thank\ThankYou.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Flag\TR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

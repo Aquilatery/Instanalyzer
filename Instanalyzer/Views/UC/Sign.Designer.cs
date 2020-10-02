@@ -119,6 +119,7 @@ namespace Instanalyzer.Views.UC
             this.SGN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SGN.Depth = 0;
             this.SGN.DrawShadows = true;
+            this.SGN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SGN.HighEmphasis = true;
             this.SGN.Icon = null;
             this.SGN.Location = new System.Drawing.Point(204, 201);

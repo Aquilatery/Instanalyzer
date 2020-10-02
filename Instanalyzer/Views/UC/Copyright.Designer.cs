@@ -35,7 +35,7 @@ namespace Instanalyzer.Views.UC
             // NOAL
             // 
             this.NOAL.BackColor = System.Drawing.Color.Transparent;
-            this.NOAL.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.NOAL.Cursor = System.Windows.Forms.Cursors.Default;
             this.NOAL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NOAL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.NOAL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
@@ -46,6 +46,7 @@ namespace Instanalyzer.Views.UC
             this.NOAL.TabIndex = 6;
             this.NOAL.Text = "Copyright © 2020 Soferity LLC - All rights reserved.";
             this.NOAL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NOAL.Click += new System.EventHandler(this.NOAL_Click);
             // 
             // Copyright
             // 

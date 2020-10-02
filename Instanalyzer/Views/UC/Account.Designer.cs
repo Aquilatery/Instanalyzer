@@ -36,6 +36,7 @@ namespace Instanalyzer.Views.UC
             // PP
             // 
             this.PP.BorderThickness = 7;
+            this.PP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PP.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.PP.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.PP.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));

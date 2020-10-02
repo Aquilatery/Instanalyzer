@@ -56,7 +56,7 @@ namespace Instanalyzer.Views.UC
             // NOAL
             // 
             this.NOAL.BackColor = System.Drawing.Color.Transparent;
-            this.NOAL.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.NOAL.Cursor = System.Windows.Forms.Cursors.Default;
             this.NOAL.Dock = System.Windows.Forms.DockStyle.Left;
             this.NOAL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.NOAL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));

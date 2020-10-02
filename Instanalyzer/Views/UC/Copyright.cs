@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace Instanalyzer.Views.UC
 {
@@ -7,6 +8,11 @@ namespace Instanalyzer.Views.UC
         public Copyright()
         {
             InitializeComponent();
+        }
+
+        private void NOAL_Click(object sender, EventArgs e)
+        {
+            new Thank().ShowDialog();
         }
     }
 }

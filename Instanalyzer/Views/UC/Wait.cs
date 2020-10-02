@@ -1,10 +1,13 @@
-﻿using Instanalyzer.Utils;
+﻿using System;
+using Instanalyzer.Utils;
 using System.Windows.Forms;
 
 namespace Instanalyzer.Views.UC
 {
     public partial class Wait : UserControl
     {
+        private int DOT = 1;
+
         public Wait()
         {
             InitializeComponent();
@@ -26,6 +29,21 @@ namespace Instanalyzer.Views.UC
                 }
             }
             UNNS.Text = User.Username + "\n" + User.Name + " " + User.Surname;
+        }
+
+        private void DOTT_Tick(object sender, EventArgs e)
+        {
+            switch (DOT++)
+            {
+                case 1:
+                case 2:
+                    WMLBL.Text += ".";
+                    break;
+                default:
+                    DOT = 1;
+                    WMLBL.Text = WMLBL.Text.Substring(0, WMLBL.Text.Length - 2);
+                    break;
+            }
         }
     }
 }

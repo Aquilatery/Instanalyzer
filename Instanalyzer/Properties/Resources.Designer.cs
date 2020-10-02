@@ -363,6 +363,16 @@ namespace Instanalyzer.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap ThankYou {
+            get {
+                object obj = ResourceManager.GetObject("ThankYou", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap TR {
             get {
                 object obj = ResourceManager.GetObject("TR", resourceCulture);
