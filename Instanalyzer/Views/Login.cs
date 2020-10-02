@@ -1,13 +1,12 @@
 ﻿using System;
+using Instanalyzer.Helpers;
 using System.Windows.Forms;
+using Instanalyzer.Views.UC;
 
 namespace Instanalyzer.Views
 {
     public partial class Login : Form
     {
-        private const string DefaultStatus = "Uygulama işleyişi sorunsuz bir şekilde devam etmektedir.";
-        private long ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-
         private int FRAMEPI = 1;
 
         public Login()
@@ -38,52 +37,66 @@ namespace Instanalyzer.Views
             }
         }
 
-        private void SGN_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(USN.Text) && string.IsNullOrEmpty(PWD.Text))
-            {
-                SSBR.Text = "Username and Password is Empty!";
-                ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-            }
-            else if (string.IsNullOrEmpty(USN.Text) && !string.IsNullOrEmpty(PWD.Text))
-            {
-                SSBR.Text = "Username is Empty!";
-                ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-            }
-            else if (!string.IsNullOrEmpty(USN.Text) && string.IsNullOrEmpty(PWD.Text))
-            {
-                SSBR.Text = "Password is Empty!";
-                ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-            }
-            else
-            {
-                //
-            }
-        }
-
         private void STATUST_Tick(object sender, EventArgs e)
         {
             try
             {
-                long Result = DateTimeOffset.UtcNow.ToUnixTimeSeconds() - ChangedStatus;
+                long Result = DateTimeOffset.UtcNow.ToUnixTimeSeconds() - Status.ChangedStatus;
                 if (Result >= 3)
-                    SSBR.Text = DefaultStatus;
+                    Status.Message = Status.DefaultStatus;
             }
-            catch (Exception Hata)
+            catch (Exception Ex)
             {
-                SSBR.Text = "Hata - " + Hata.Source + ": " + Hata.Message;
-                ChangedStatus = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+                Status.Message = "Hata - " + Ex.Source + ": " + Ex.Message;
             }
         }
 
-        private void FPLL_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void STATUSMT_Tick(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.instagram.com/accounts/password/reset");
+            try
+            {
+                SSBR.Text = Status.Message;
+            }
+            catch (Exception Ex)
+            {
+                Status.Message = "Hata - " + Ex.Source + ": " + Ex.Message;
+            }
         }
 
-        private void RGLL_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void WINDOWT_Tick(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.instagram.com/accounts/emailsignup");
+            if (Window.ActiveWindow)
+            {
+                Window.ActiveWindow = false;
+                SetWindow(Window.WindowMode);
+            }
+        }
+
+        private void SetWindow(Window.WindowType Type)
+        {
+            FPNL.Controls.Clear();
+            SPNL.Controls.Clear();
+            switch (Type)
+            {
+                case Window.WindowType.Sign:
+                    FPNL.Controls.Add(new Sign());
+                    SPNL.Controls.Add(new Register());
+                    break;
+                case Window.WindowType.Multi:
+                    FPNL.Controls.Add(new Multi());
+                    SPNL.Controls.Add(new UC.Login());
+                    break;
+            }
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

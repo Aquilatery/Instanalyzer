@@ -45,9 +45,9 @@
     <DisableFody>true</DisableFody>
   </PropertyGroup>
 
-  <!--<ItemGroup Condition="'$(TargetFramework)'=='net5.0-windows'">
+  <!--<ItemGroup Condition="'$(TargetFramework)'=='net5.0'">
     <Reference Include="ReaLTaiizor">
-      <HintPath>..\..\..\..\ReaLTaiizor\Lib\ReaLTaiizor\src\ReaLTaiizor\bin\Release\net5.0-windows\ReaLTaiizor.dll</HintPath>
+      <HintPath>..\..\..\..\ReaLTaiizor\Lib\ReaLTaiizor\src\ReaLTaiizor\bin\Release\net5.0\ReaLTaiizor.dll</HintPath>
     </Reference>
   </ItemGroup>-->
 
@@ -79,6 +79,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Views\UC\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\UC\Register - Kopyala.Designer.cs">
+      <DependentUpon>Register.Designer.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UC\Multi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -86,10 +95,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\UC\Register - Kopyala.resx">
+      <DependentUpon>Register.resx</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
     <Folder Include="Assets\" />
   </ItemGroup>
 
