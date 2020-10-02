@@ -2,6 +2,7 @@
 using Instanalyzer.Helpers;
 using System.Windows.Forms;
 using Instanalyzer.Views.UC;
+using ReaLTaiizor.Controls;
 
 namespace Instanalyzer.Views
 {
@@ -79,6 +80,29 @@ namespace Instanalyzer.Views
             switch (Type)
             {
                 case Window.WindowType.Sign:
+                    /*
+                        Sign SGN = new Sign();
+                        foreach (Control Control in SGN.Controls)
+                        {
+                            if (Control.Name == "PWD")
+                            {
+                                MaterialTextBox MTB = Control as MaterialTextBox;
+                                MaterialTextBox NMTB = new MaterialTextBox()
+                                {
+                                    Password = true,
+                                    Hint = MTB.Hint,
+                                    Size = Control.Size,
+                                    Name = Control.Name,
+                                    UseAccent = MTB.UseAccent,
+                                    Location = Control.Location,
+                                };
+                                SGN.Controls.Remove(Control);
+                                SGN.Controls.Add(NMTB);
+                                break;
+                            }
+                        }
+                        FPNL.Controls.Add(SGN);
+                    */
                     FPNL.Controls.Add(new Sign());
                     SPNL.Controls.Add(new Register());
                     break;
