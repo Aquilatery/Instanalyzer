@@ -31,12 +31,12 @@ namespace Instanalyzer.Views.UC
         {
             this.PIND = new ReaLTaiizor.Controls.ProgressIndicator();
             this.WMLBL = new ReaLTaiizor.Controls.MetroLabel();
-            this.metroLabel1 = new ReaLTaiizor.Controls.MetroLabel();
+            this.UNNS = new ReaLTaiizor.Controls.MetroLabel();
             this.IGLL = new System.Windows.Forms.PictureBox();
             this.PP = new ReaLTaiizor.Controls.MetroEllipse();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.GIF = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.IGLL)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GIF)).BeginInit();
             this.SuspendLayout();
             // 
             // PIND
@@ -68,21 +68,21 @@ namespace Instanalyzer.Views.UC
             this.WMLBL.ThemeAuthor = "Taiizor";
             this.WMLBL.ThemeName = "MetroLite";
             // 
-            // metroLabel1
+            // UNNS
             // 
-            this.metroLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.metroLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.metroLabel1.Location = new System.Drawing.Point(99, 78);
-            this.metroLabel1.Margin = new System.Windows.Forms.Padding(3);
-            this.metroLabel1.MetroStyleManager = null;
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(184, 72);
-            this.metroLabel1.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
-            this.metroLabel1.TabIndex = 20;
-            this.metroLabel1.Text = "ReaLTaiizor\r\nBayram Emekli";
-            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroLabel1.ThemeAuthor = "Taiizor";
-            this.metroLabel1.ThemeName = "MetroDark";
+            this.UNNS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.UNNS.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.UNNS.Location = new System.Drawing.Point(99, 78);
+            this.UNNS.Margin = new System.Windows.Forms.Padding(3);
+            this.UNNS.MetroStyleManager = null;
+            this.UNNS.Name = "UNNS";
+            this.UNNS.Size = new System.Drawing.Size(184, 72);
+            this.UNNS.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.UNNS.TabIndex = 20;
+            this.UNNS.Text = "ReaLTaiizor\r\nBayram Emekli";
+            this.UNNS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.UNNS.ThemeAuthor = "Taiizor";
+            this.UNNS.ThemeName = "MetroDark";
             // 
             // IGLL
             // 
@@ -125,32 +125,32 @@ namespace Instanalyzer.Views.UC
             this.PP.ThemeAuthor = "Taiizor";
             this.PP.ThemeName = "MetroLite";
             // 
-            // pictureBox1
+            // GIF
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Instanalyzer.Properties.Resources.DuckCat;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 156);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(340, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
+            this.GIF.BackColor = System.Drawing.Color.Transparent;
+            this.GIF.Image = global::Instanalyzer.Properties.Resources.DuckCat;
+            this.GIF.Location = new System.Drawing.Point(21, 156);
+            this.GIF.Name = "GIF";
+            this.GIF.Size = new System.Drawing.Size(340, 93);
+            this.GIF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.GIF.TabIndex = 21;
+            this.GIF.TabStop = false;
             // 
             // Wait
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.GIF);
             this.Controls.Add(this.WMLBL);
-            this.Controls.Add(this.metroLabel1);
+            this.Controls.Add(this.UNNS);
             this.Controls.Add(this.PIND);
             this.Controls.Add(this.IGLL);
             this.Controls.Add(this.PP);
             this.Name = "Wait";
             this.Size = new System.Drawing.Size(383, 299);
             ((System.ComponentModel.ISupportInitialize)(this.IGLL)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GIF)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -160,7 +160,7 @@ namespace Instanalyzer.Views.UC
         private ReaLTaiizor.Controls.ProgressIndicator PIND;
         private ReaLTaiizor.Controls.MetroLabel WMLBL;
         private ReaLTaiizor.Controls.MetroEllipse PP;
-        private ReaLTaiizor.Controls.MetroLabel metroLabel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private ReaLTaiizor.Controls.MetroLabel UNNS;
+        private System.Windows.Forms.PictureBox GIF;
     }
 }
