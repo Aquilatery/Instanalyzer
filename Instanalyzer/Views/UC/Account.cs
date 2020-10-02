@@ -19,7 +19,7 @@ namespace Instanalyzer.Views.UC
             _Name = Name;
             _Surname = Surname;
             _Username = Username;
-            PPTT.SetToolTip(PP, Name + " " + Surname);
+            PPTT.SetToolTip(PP, Username + "\n" + Name + " " + Surname);
             if (!string.IsNullOrEmpty(PPhoto) && File.Exists(PPhoto))
             {
                 PP.Image = Image.FromFile(PPhoto);

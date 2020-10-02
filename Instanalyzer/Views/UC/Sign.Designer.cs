@@ -89,7 +89,7 @@ namespace Instanalyzer.Views.UC
             this.USN.Name = "USN";
             this.USN.Size = new System.Drawing.Size(340, 50);
             this.USN.TabIndex = 17;
-            this.USN.Text = "ReaLTaiizor";
+            this.USN.Text = "Taiizor";
             // 
             // FPLL
             // 
