@@ -92,11 +92,13 @@ namespace Instanalyzer.Views
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+            Environment.Exit(1);
         }
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+            Environment.Exit(1);
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Instanalyzer
 {
     static class Instanalyzer
     {
-        private static readonly Mutex MTX = new Mutex(true, "{Instanalyzer - Instagram Analyzer}");
+        private static readonly Mutex MTX = new Mutex(true, "{Soferity Instanalyzer - Instagram Analyzer}");
 
         /// <summary>
         ///  The main entry point for the application.

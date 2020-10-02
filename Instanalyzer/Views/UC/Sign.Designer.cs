@@ -59,7 +59,7 @@ namespace Instanalyzer.Views.UC
             // 
             this.PWD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PWD.Depth = 0;
-            this.PWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.PWD.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.PWD.Hint = "Şifre";
             this.PWD.Location = new System.Drawing.Point(21, 142);
             this.PWD.MaxLength = 100;
@@ -69,7 +69,7 @@ namespace Instanalyzer.Views.UC
             this.PWD.Password = true;
             this.PWD.Size = new System.Drawing.Size(340, 50);
             this.PWD.TabIndex = 18;
-            this.PWD.Text = "";
+            this.PWD.Text = "ReaLTaiizor";
             this.PWD.UseAccent = false;
             // 
             // USN
@@ -77,7 +77,7 @@ namespace Instanalyzer.Views.UC
             this.USN.BackColor = System.Drawing.SystemColors.Window;
             this.USN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.USN.Depth = 0;
-            this.USN.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.USN.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.USN.Hint = "Telefon numarası, kullanıcı adı veya e-posta";
             this.USN.Location = new System.Drawing.Point(21, 86);
             this.USN.MaxLength = 100;
@@ -86,7 +86,7 @@ namespace Instanalyzer.Views.UC
             this.USN.Name = "USN";
             this.USN.Size = new System.Drawing.Size(340, 50);
             this.USN.TabIndex = 17;
-            this.USN.Text = "";
+            this.USN.Text = "ReaLTaiizor";
             // 
             // FPLL
             // 
