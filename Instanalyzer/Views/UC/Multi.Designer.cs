@@ -36,14 +36,16 @@ namespace Instanalyzer.Views.UC
             // 
             // MAFLP
             // 
+            this.MAFLP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MAFLP.AutoScroll = true;
             this.MAFLP.Location = new System.Drawing.Point(21, 78);
             this.MAFLP.Name = "MAFLP";
-            this.MAFLP.Size = new System.Drawing.Size(340, 218);
+            this.MAFLP.Size = new System.Drawing.Size(340, 215);
             this.MAFLP.TabIndex = 19;
             // 
             // IGLL
             // 
+            this.IGLL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.IGLL.BackColor = System.Drawing.Color.Transparent;
             this.IGLL.Image = global::Instanalyzer.Properties.Resources.Instagram;
             this.IGLL.Location = new System.Drawing.Point(21, 6);

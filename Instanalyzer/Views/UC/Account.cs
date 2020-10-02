@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Drawing;
 using Instanalyzer.Helpers;
 using System.Windows.Forms;
@@ -28,6 +29,11 @@ namespace Instanalyzer.Views.UC
                         break;
                 }
             }
+        }
+
+        private void PP_Click(object sender, EventArgs e)
+        {
+            Window.WindowMode = Window.WindowType.Wait;
         }
     }
 }

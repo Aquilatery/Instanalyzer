@@ -40,6 +40,7 @@ namespace Instanalyzer.Views.UC
             // 
             // RMBR
             // 
+            this.RMBR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.RMBR.AutoSize = true;
             this.RMBR.Checked = true;
             this.RMBR.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -57,9 +58,10 @@ namespace Instanalyzer.Views.UC
             // 
             // PWD
             // 
+            this.PWD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PWD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PWD.Depth = 0;
-            this.PWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PWD.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.PWD.Hint = "Şifre";
             this.PWD.Location = new System.Drawing.Point(21, 142);
             this.PWD.MaxLength = 100;
@@ -74,6 +76,7 @@ namespace Instanalyzer.Views.UC
             // 
             // USN
             // 
+            this.USN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.USN.BackColor = System.Drawing.SystemColors.Window;
             this.USN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.USN.Depth = 0;
@@ -110,6 +113,7 @@ namespace Instanalyzer.Views.UC
             // 
             // SGN
             // 
+            this.SGN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SGN.AutoSize = false;
             this.SGN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.SGN.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -131,6 +135,7 @@ namespace Instanalyzer.Views.UC
             // 
             // IGLL
             // 
+            this.IGLL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.IGLL.BackColor = System.Drawing.Color.Transparent;
             this.IGLL.Image = global::Instanalyzer.Properties.Resources.Instagram;
             this.IGLL.Location = new System.Drawing.Point(21, 6);

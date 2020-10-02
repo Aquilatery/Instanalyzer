@@ -79,7 +79,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Views\UC\Copyright.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Views\UC\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\UC\Wait.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Views\UC\Register - Kopyala.Designer.cs">

@@ -61,6 +61,7 @@ namespace Instanalyzer.Views.UC
             this.PP.ThemeAuthor = "Taiizor";
             this.PP.ThemeName = "MetroLite";
             this.PPTT.SetToolTip(this.PP, "{0} {1}");
+            this.PP.Click += new System.EventHandler(this.PP_Click);
             // 
             // PPTT
             // 

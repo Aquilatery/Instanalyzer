@@ -7,6 +7,7 @@ namespace Instanalyzer.Helpers
         public enum WindowType
         {
             Sign,
+            Wait,
             Multi
         }
 

@@ -106,6 +106,10 @@ namespace Instanalyzer.Views
                     FPNL.Controls.Add(new Sign());
                     SPNL.Controls.Add(new Register());
                     break;
+                case Window.WindowType.Wait:
+                    FPNL.Controls.Add(new Wait());
+                    SPNL.Controls.Add(new Copyright());
+                    break;
                 case Window.WindowType.Multi:
                     FPNL.Controls.Add(new Multi());
                     SPNL.Controls.Add(new UC.Login());
