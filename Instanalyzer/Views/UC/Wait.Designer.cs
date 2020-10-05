@@ -58,12 +58,13 @@ namespace Instanalyzer.Views.UC
             // 
             this.WMLBL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.WMLBL.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.WMLBL.IsDerivedStyle = true;
             this.WMLBL.Location = new System.Drawing.Point(21, 255);
             this.WMLBL.Margin = new System.Windows.Forms.Padding(3);
-            this.WMLBL.MetroStyleManager = null;
             this.WMLBL.Name = "WMLBL";
             this.WMLBL.Size = new System.Drawing.Size(340, 41);
             this.WMLBL.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.WMLBL.StyleManager = null;
             this.WMLBL.TabIndex = 16;
             this.WMLBL.Text = "Giriş Yapılıyor. Lütfen Bekleyin.";
             this.WMLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -74,12 +75,13 @@ namespace Instanalyzer.Views.UC
             // 
             this.UNNS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UNNS.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.UNNS.IsDerivedStyle = true;
             this.UNNS.Location = new System.Drawing.Point(99, 78);
             this.UNNS.Margin = new System.Windows.Forms.Padding(3);
-            this.UNNS.MetroStyleManager = null;
             this.UNNS.Name = "UNNS";
             this.UNNS.Size = new System.Drawing.Size(184, 72);
             this.UNNS.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
+            this.UNNS.StyleManager = null;
             this.UNNS.TabIndex = 20;
             this.UNNS.Text = "ReaLTaiizor\r\nBayram Emekli";
             this.UNNS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -112,8 +114,8 @@ namespace Instanalyzer.Views.UC
             this.PP.HoverTextColor = System.Drawing.Color.White;
             this.PP.Image = global::Instanalyzer.Properties.Resources.Unknown;
             this.PP.ImageSize = new System.Drawing.Size(64, 64);
+            this.PP.IsDerivedStyle = true;
             this.PP.Location = new System.Drawing.Point(21, 78);
-            this.PP.MetroStyleManager = null;
             this.PP.Name = "PP";
             this.PP.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.PP.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -123,6 +125,7 @@ namespace Instanalyzer.Views.UC
             this.PP.PressTextColor = System.Drawing.Color.White;
             this.PP.Size = new System.Drawing.Size(72, 72);
             this.PP.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.PP.StyleManager = null;
             this.PP.TabIndex = 17;
             this.PP.ThemeAuthor = "Taiizor";
             this.PP.ThemeName = "MetroLite";

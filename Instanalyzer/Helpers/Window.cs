@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Instanalyzer.Helpers
+﻿namespace Instanalyzer.Helpers
 {
     public class Window
     {

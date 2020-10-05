@@ -9,9 +9,6 @@ namespace Instanalyzer
     {
         private static readonly Mutex MTX = new Mutex(true, "{Soferity Instanalyzer - Instagram Analyzer}");
 
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {

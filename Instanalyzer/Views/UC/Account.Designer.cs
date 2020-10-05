@@ -47,8 +47,8 @@ namespace Instanalyzer.Views.UC
             this.PP.HoverTextColor = System.Drawing.Color.White;
             this.PP.Image = global::Instanalyzer.Properties.Resources.Unknown;
             this.PP.ImageSize = new System.Drawing.Size(64, 64);
+            this.PP.IsDerivedStyle = true;
             this.PP.Location = new System.Drawing.Point(0, 0);
-            this.PP.MetroStyleManager = null;
             this.PP.Name = "PP";
             this.PP.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.PP.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -58,10 +58,11 @@ namespace Instanalyzer.Views.UC
             this.PP.PressTextColor = System.Drawing.Color.White;
             this.PP.Size = new System.Drawing.Size(72, 72);
             this.PP.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.PP.StyleManager = null;
             this.PP.TabIndex = 0;
             this.PP.ThemeAuthor = "Taiizor";
             this.PP.ThemeName = "MetroLite";
-            this.PPTT.SetToolTip(this.PP, "{0} {1}");
+            this.PPTT.SetToolTip(this.PP, "{0}\r\n{1}");
             this.PP.Click += new System.EventHandler(this.PP_Click);
             // 
             // PPTT
@@ -69,9 +70,10 @@ namespace Instanalyzer.Views.UC
             this.PPTT.BackColor = System.Drawing.Color.White;
             this.PPTT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.PPTT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.PPTT.MetroStyleManager = null;
+            this.PPTT.IsDerivedStyle = true;
             this.PPTT.OwnerDraw = true;
             this.PPTT.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.PPTT.StyleManager = null;
             this.PPTT.ThemeAuthor = "Taiizor";
             this.PPTT.ThemeName = "MetroLite";
             // 
