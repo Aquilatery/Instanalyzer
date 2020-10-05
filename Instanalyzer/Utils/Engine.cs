@@ -2,6 +2,9 @@
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using static Instanalyzer.Utils.Argument;
+using static Instanalyzer.Helpers.Setting;
+using static Instanalyzer.Helpers.Argument;
 
 namespace Instanalyzer.Utils
 {
@@ -20,7 +23,19 @@ namespace Instanalyzer.Utils
             {
                 MTX.ReleaseMutex();
                 if (SEE_UI)
+                {
+                    if (Args != null)
+                    {
+                        Explode(Args);
+                        if (!string.IsNullOrEmpty(ArgUser))
+                            Helpers.Window.WindowMode = Helpers.Window.WindowType.Multi;
+                        /*
+                            arg'da olan user eĞer remember olaran daha önceden girilmişse
+                            wait'e atıp direk giriş işlemini başlatabilirsin. ETC/Account da var örnek
+                        */
+                    }
                     Application.Run(new Views.UI.Login());
+                }
                 else
                 {
                     Application.Exit();
@@ -35,19 +50,19 @@ namespace Instanalyzer.Utils
         {
             get
             {
-                Setting_Control("Config.dat");
-                Folder_Control(Helpers.Setting.UserFolder, true);
-                Folder_Control(Helpers.Setting.DownloadFolder, true);
-                Folder_Control(Helpers.Setting.DownloadPPFolder, true);
-                Folder_Control(Helpers.Setting.DownloadImageFolder, true);
-                Folder_Control(Helpers.Setting.DownloadVideoFolder, true);
+                Setting_Control(ConfigFile);
+                Folder_Control(UserFolder, true);
+                Folder_Control(DownloadFolder, true);
+                Folder_Control(DownloadPPFolder, true);
+                Folder_Control(DownloadImageFolder, true);
+                Folder_Control(DownloadVideoFolder, true);
                 return true;
             }
         }
 
         private static void Setting_Control(string Config)
         {
-            Config = Helpers.Setting.DefaultPath + "\\" + Config;
+            Config = DefaultPath + "\\" + Config;
             if (!Files_Control(Config))
                 Setting.Save(Config);
             Setting.Read(Config);
@@ -55,7 +70,7 @@ namespace Instanalyzer.Utils
 
         private static bool Folder_Control(string Folder, bool Create = false)
         {
-            Folder = Helpers.Setting.DefaultPath + "\\" + Folder;
+            Folder = DefaultPath + "\\" + Folder;
             if (!Directory.Exists(Folder))
             {
                 if (Create)
@@ -68,7 +83,7 @@ namespace Instanalyzer.Utils
 
         private static bool Files_Control(string Files)
         {
-            Files = Helpers.Setting.DefaultPath + "\\" + Files;
+            Files = DefaultPath + "\\" + Files;
             if (!File.Exists(Files))
                 return false;
             else

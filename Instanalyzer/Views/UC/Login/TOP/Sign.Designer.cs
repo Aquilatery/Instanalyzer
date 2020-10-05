@@ -130,7 +130,7 @@ namespace Instanalyzer.Views.UC.Login.TOP
             this.SGN.Size = new System.Drawing.Size(157, 36);
             this.SGN.TabIndex = 15;
             this.SGN.Text = "Giriş Yap";
-            this.SGN.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.SGN.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.SGN.UseAccentColor = false;
             this.SGN.UseVisualStyleBackColor = false;
             this.SGN.Click += new System.EventHandler(this.SGN_Click);

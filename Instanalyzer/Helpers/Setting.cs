@@ -1,16 +1,11 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using System.Text;
-using Instanalyzer.Helpers;
-using System.Threading.Tasks;
-using System.Collections.Generic;
+﻿using System.IO;
+using static Instanalyzer.Helpers.Engine;
 
 namespace Instanalyzer.Helpers
 {
     public static class Setting
     {
-        private static string _DefaultPath = Engine.StartupPath;
+        private static string _DefaultPath = StartupPath;
         public static string DefaultPath
         {
             get
@@ -21,6 +16,15 @@ namespace Instanalyzer.Helpers
             {
                 if (Directory.Exists(value))
                     _DefaultPath = value;
+            }
+        }
+
+        private static string _ConfigFile = "Config.dat";
+        public static string ConfigFile
+        {
+            get
+            {
+                return _ConfigFile;
             }
         }
 
