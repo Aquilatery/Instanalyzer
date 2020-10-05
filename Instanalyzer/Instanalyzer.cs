@@ -1,29 +1,14 @@
 using System;
-using System.Threading;
-using System.Windows.Forms;
-using Instanalyzer.Views.UI;
+using static Instanalyzer.Utils.Engine;
 
 namespace Instanalyzer
 {
     static class Instanalyzer
     {
-        private static readonly Mutex MTX = new Mutex(true, "{Soferity Instanalyzer - Instagram Analyzer}");
-
         [STAThread]
-        static void Main()
+        static void Main(string[] Args = null)
         {
-            Application.EnableVisualStyles();
-            #if NET5_0
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            #endif
-            Application.SetCompatibleTextRenderingDefault(false);
-            if (MTX.WaitOne(TimeSpan.Zero, true))
-            {
-                MTX.ReleaseMutex();
-                Application.Run(new Login());
-            }
-            else
-                MessageBox.Show("Already Open!", "Instanalyzer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Start_Engine(Args);
         }
     }
 }

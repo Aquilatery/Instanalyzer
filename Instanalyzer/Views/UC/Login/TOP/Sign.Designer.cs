@@ -61,7 +61,7 @@ namespace Instanalyzer.Views.UC.Login.TOP
             this.PWD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PWD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PWD.Depth = 0;
-            this.PWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.PWD.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.PWD.Hint = "Şifre";
             this.PWD.Location = new System.Drawing.Point(21, 142);
             this.PWD.MaxLength = 100;
@@ -80,7 +80,7 @@ namespace Instanalyzer.Views.UC.Login.TOP
             this.USN.BackColor = System.Drawing.SystemColors.Window;
             this.USN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.USN.Depth = 0;
-            this.USN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.USN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.USN.Hint = "Telefon numarası, kullanıcı adı veya e-posta";
             this.USN.Location = new System.Drawing.Point(21, 86);
             this.USN.MaxLength = 100;
@@ -116,6 +116,7 @@ namespace Instanalyzer.Views.UC.Login.TOP
             this.SGN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SGN.AutoSize = false;
             this.SGN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.SGN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.SGN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SGN.Depth = 0;
             this.SGN.DrawShadows = true;
@@ -129,9 +130,9 @@ namespace Instanalyzer.Views.UC.Login.TOP
             this.SGN.Size = new System.Drawing.Size(157, 36);
             this.SGN.TabIndex = 15;
             this.SGN.Text = "Giriş Yap";
-            this.SGN.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.SGN.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Outlined;
             this.SGN.UseAccentColor = false;
-            this.SGN.UseVisualStyleBackColor = true;
+            this.SGN.UseVisualStyleBackColor = false;
             this.SGN.Click += new System.EventHandler(this.SGN_Click);
             // 
             // IGLL
