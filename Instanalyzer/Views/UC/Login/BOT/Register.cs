@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Instanalyzer.Views.UC
+namespace Instanalyzer.Views.UC.Login.BOT
 {
     public partial class Register : UserControl
     {

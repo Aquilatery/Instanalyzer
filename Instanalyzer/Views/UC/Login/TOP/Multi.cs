@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 using Instanalyzer.Helpers;
+using Instanalyzer.Views.UC.Login.ETC;
 
-namespace Instanalyzer.Views.UC
+namespace Instanalyzer.Views.UC.Login.TOP
 {
     public partial class Multi : UserControl
     {

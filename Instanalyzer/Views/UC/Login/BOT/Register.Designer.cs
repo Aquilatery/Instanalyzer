@@ -1,7 +1,7 @@
 ﻿
-namespace Instanalyzer.Views.UC
+namespace Instanalyzer.Views.UC.Login.BOT
 {
-    partial class Login
+    partial class Register
     {
         /// <summary> 
         ///Gerekli tasarımcı değişkeni.
@@ -42,13 +42,13 @@ namespace Instanalyzer.Views.UC
             this.RGLL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.RGLL.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.RGLL.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.RGLL.Location = new System.Drawing.Point(208, 0);
+            this.RGLL.Location = new System.Drawing.Point(198, 0);
             this.RGLL.Margin = new System.Windows.Forms.Padding(0);
             this.RGLL.Name = "RGLL";
-            this.RGLL.Size = new System.Drawing.Size(175, 39);
+            this.RGLL.Size = new System.Drawing.Size(185, 39);
             this.RGLL.TabIndex = 7;
             this.RGLL.TabStop = true;
-            this.RGLL.Text = "Hesap Ekle";
+            this.RGLL.Text = "Kaydol";
             this.RGLL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RGLL.VisitedLinkColor = System.Drawing.Color.RoyalBlue;
             this.RGLL.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.RGLL_LinkClicked);
@@ -63,19 +63,19 @@ namespace Instanalyzer.Views.UC
             this.NOAL.Location = new System.Drawing.Point(0, 0);
             this.NOAL.Margin = new System.Windows.Forms.Padding(0);
             this.NOAL.Name = "NOAL";
-            this.NOAL.Size = new System.Drawing.Size(208, 39);
+            this.NOAL.Size = new System.Drawing.Size(198, 39);
             this.NOAL.TabIndex = 6;
-            this.NOAL.Text = "Başka hesabın mı var?";
+            this.NOAL.Text = "Hesabın yok mu?";
             this.NOAL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Login
+            // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.Controls.Add(this.RGLL);
             this.Controls.Add(this.NOAL);
-            this.Name = "Login";
+            this.Name = "Register";
             this.Size = new System.Drawing.Size(383, 39);
             this.ResumeLayout(false);
 

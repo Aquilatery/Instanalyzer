@@ -1,10 +1,11 @@
 ﻿using System;
+using ReaLTaiizor.Controls;
 using Instanalyzer.Helpers;
 using System.Windows.Forms;
-using Instanalyzer.Views.UC;
-using ReaLTaiizor.Controls;
+using Instanalyzer.Views.UC.Login.TOP;
+using Instanalyzer.Views.UC.Login.BOT;
 
-namespace Instanalyzer.Views
+namespace Instanalyzer.Views.MUI
 {
     public partial class Login : Form
     {
@@ -112,7 +113,7 @@ namespace Instanalyzer.Views
                     break;
                 case Window.WindowType.Multi:
                     FPNL.Controls.Add(new Multi());
-                    SPNL.Controls.Add(new UC.Login());
+                    SPNL.Controls.Add(new Add());
                     break;
             }
         }

@@ -1,7 +1,7 @@
 ﻿
-namespace Instanalyzer.Views.UC
+namespace Instanalyzer.Views.UC.Login.BOT
 {
-    partial class Copyright
+    partial class Add
     {
         /// <summary> 
         ///Gerekli tasarımcı değişkeni.
@@ -29,38 +29,61 @@ namespace Instanalyzer.Views.UC
         /// </summary>
         private void InitializeComponent()
         {
+            this.RGLL = new ReaLTaiizor.Controls.NightLinkLabel();
             this.NOAL = new ReaLTaiizor.Controls.NightLabel();
             this.SuspendLayout();
+            // 
+            // RGLL
+            // 
+            this.RGLL.ActiveLinkColor = System.Drawing.Color.SteelBlue;
+            this.RGLL.BackColor = System.Drawing.Color.Transparent;
+            this.RGLL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RGLL.Dock = System.Windows.Forms.DockStyle.Right;
+            this.RGLL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.RGLL.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.RGLL.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.RGLL.Location = new System.Drawing.Point(208, 0);
+            this.RGLL.Margin = new System.Windows.Forms.Padding(0);
+            this.RGLL.Name = "RGLL";
+            this.RGLL.Size = new System.Drawing.Size(175, 39);
+            this.RGLL.TabIndex = 7;
+            this.RGLL.TabStop = true;
+            this.RGLL.Text = "Hesap Ekle";
+            this.RGLL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RGLL.VisitedLinkColor = System.Drawing.Color.RoyalBlue;
+            this.RGLL.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.RGLL_LinkClicked);
             // 
             // NOAL
             // 
             this.NOAL.BackColor = System.Drawing.Color.Transparent;
             this.NOAL.Cursor = System.Windows.Forms.Cursors.Default;
-            this.NOAL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NOAL.Dock = System.Windows.Forms.DockStyle.Left;
             this.NOAL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.NOAL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
             this.NOAL.Location = new System.Drawing.Point(0, 0);
             this.NOAL.Margin = new System.Windows.Forms.Padding(0);
             this.NOAL.Name = "NOAL";
-            this.NOAL.Size = new System.Drawing.Size(383, 39);
+            this.NOAL.Size = new System.Drawing.Size(208, 39);
             this.NOAL.TabIndex = 6;
-            this.NOAL.Text = "Copyright © 2020 Soferity LLC - All rights reserved.";
-            this.NOAL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.NOAL.Click += new System.EventHandler(this.NOAL_Click);
+            this.NOAL.Text = "Başka hesabın mı var?";
+            this.NOAL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Copyright
+            // Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.Controls.Add(this.RGLL);
             this.Controls.Add(this.NOAL);
-            this.Name = "Copyright";
+            this.Name = "Add";
             this.Size = new System.Drawing.Size(383, 39);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private ReaLTaiizor.Controls.NightLinkLabel RGLL;
         private ReaLTaiizor.Controls.NightLabel NOAL;
     }
 }

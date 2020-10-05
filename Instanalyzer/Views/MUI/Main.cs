@@ -1,7 +1,7 @@
 ﻿using ReaLTaiizor.Forms;
 using System.Windows.Forms;
 
-namespace Instanalyzer.Views
+namespace Instanalyzer.Views.MUI
 {
     public partial class Main : LostForm
     {

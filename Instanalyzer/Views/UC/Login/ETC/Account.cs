@@ -5,7 +5,7 @@ using Instanalyzer.Utils;
 using Instanalyzer.Helpers;
 using System.Windows.Forms;
 
-namespace Instanalyzer.Views.UC
+namespace Instanalyzer.Views.UC.Login.ETC
 {
     public partial class Account : UserControl
     {

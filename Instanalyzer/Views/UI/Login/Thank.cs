@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Instanalyzer.Views
+namespace Instanalyzer.Views.UI.Login
 {
     public partial class Thank : Form
     {

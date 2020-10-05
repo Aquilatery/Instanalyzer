@@ -2,7 +2,7 @@
 using Instanalyzer.Helpers;
 using System.Windows.Forms;
 
-namespace Instanalyzer.Views.UC
+namespace Instanalyzer.Views.UC.Login.TOP
 {
     public partial class Sign : UserControl
     {

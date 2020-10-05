@@ -1,5 +1,5 @@
 ﻿
-namespace Instanalyzer.Views.UC
+namespace Instanalyzer.Views.UC.Login.ETC
 {
     partial class Account
     {

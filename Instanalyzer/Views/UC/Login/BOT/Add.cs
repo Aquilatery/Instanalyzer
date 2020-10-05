@@ -1,11 +1,11 @@
 ﻿using Instanalyzer.Helpers;
 using System.Windows.Forms;
 
-namespace Instanalyzer.Views.UC
+namespace Instanalyzer.Views.UC.Login.BOT
 {
-    public partial class Login : UserControl
+    public partial class Add : UserControl
     {
-        public Login()
+        public Add()
         {
             InitializeComponent();
         }

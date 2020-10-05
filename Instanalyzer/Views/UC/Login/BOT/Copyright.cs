@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using Instanalyzer.Views.UI.Login;
 
-namespace Instanalyzer.Views.UC
+namespace Instanalyzer.Views.UC.Login.BOT
 {
     public partial class Copyright : UserControl
     {
