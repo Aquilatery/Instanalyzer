@@ -37,7 +37,7 @@ namespace Instanalyzer.Views.UC.Login.BOT
             // 
             this.RGLL.ActiveLinkColor = System.Drawing.Color.SteelBlue;
             this.RGLL.BackColor = System.Drawing.Color.Transparent;
-            this.RGLL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RGLL.Cursor = System.Windows.Forms.Cursors.Default;
             this.RGLL.Dock = System.Windows.Forms.DockStyle.Right;
             this.RGLL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.RGLL.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
@@ -56,7 +56,7 @@ namespace Instanalyzer.Views.UC.Login.BOT
             // NOAL
             // 
             this.NOAL.BackColor = System.Drawing.Color.Transparent;
-            this.NOAL.Cursor = System.Windows.Forms.Cursors.Default;
+            this.NOAL.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.NOAL.Dock = System.Windows.Forms.DockStyle.Left;
             this.NOAL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.NOAL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));

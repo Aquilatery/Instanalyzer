@@ -1,7 +1,7 @@
 using System;
 using System.Threading;
 using System.Windows.Forms;
-using Instanalyzer.Views.MUI;
+using Instanalyzer.Views.UI;
 
 namespace Instanalyzer
 {

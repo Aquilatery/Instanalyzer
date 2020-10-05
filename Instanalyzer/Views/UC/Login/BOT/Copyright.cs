@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using Instanalyzer.Views.UI.Login;
+using Instanalyzer.Views.UI.ETC;
 
 namespace Instanalyzer.Views.UC.Login.BOT
 {

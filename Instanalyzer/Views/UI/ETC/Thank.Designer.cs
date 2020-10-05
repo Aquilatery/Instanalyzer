@@ -1,5 +1,5 @@
 ﻿
-namespace Instanalyzer.Views.UI.Login
+namespace Instanalyzer.Views.UI.ETC
 {
     partial class Thank
     {

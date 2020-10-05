@@ -1,5 +1,5 @@
 ﻿
-namespace Instanalyzer.Views.MUI
+namespace Instanalyzer.Views.UI
 {
     partial class Main
     {

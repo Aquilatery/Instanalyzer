@@ -61,7 +61,7 @@ namespace Instanalyzer.Views.UC.Login.TOP
             this.PWD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PWD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PWD.Depth = 0;
-            this.PWD.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.PWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.PWD.Hint = "Şifre";
             this.PWD.Location = new System.Drawing.Point(21, 142);
             this.PWD.MaxLength = 100;
@@ -80,7 +80,7 @@ namespace Instanalyzer.Views.UC.Login.TOP
             this.USN.BackColor = System.Drawing.SystemColors.Window;
             this.USN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.USN.Depth = 0;
-            this.USN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.USN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.USN.Hint = "Telefon numarası, kullanıcı adı veya e-posta";
             this.USN.Location = new System.Drawing.Point(21, 86);
             this.USN.MaxLength = 100;
@@ -95,7 +95,7 @@ namespace Instanalyzer.Views.UC.Login.TOP
             // 
             this.FPLL.ActiveLinkColor = System.Drawing.Color.SteelBlue;
             this.FPLL.BackColor = System.Drawing.Color.Transparent;
-            this.FPLL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FPLL.Cursor = System.Windows.Forms.Cursors.Default;
             this.FPLL.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.FPLL.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FPLL.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;

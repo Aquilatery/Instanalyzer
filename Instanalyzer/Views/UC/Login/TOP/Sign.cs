@@ -1,4 +1,6 @@
 ﻿using System;
+using ReaLTaiizor.Util;
+using ReaLTaiizor.Colors;
 using Instanalyzer.Helpers;
 using System.Windows.Forms;
 
@@ -6,9 +8,15 @@ namespace Instanalyzer.Views.UC.Login.TOP
 {
     public partial class Sign : UserControl
     {
+        private readonly MaterialManager MM;
+
         public Sign()
         {
             InitializeComponent();
+            MM = MaterialManager.Instance;
+            MM.EnforceBackcolorOnAllComponents = true;
+            MM.Theme = MaterialManager.Themes.LIGHT;
+            MM.ColorScheme = new MaterialColorScheme(MaterialPrimary.Indigo500, MaterialPrimary.Indigo700, MaterialPrimary.Indigo100, MaterialAccent.Pink200, MaterialTextShade.WHITE);
         }
 
         private void SGN_Click(object sender, EventArgs e)

@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using Instanalyzer.Views.UC.Login.TOP;
 using Instanalyzer.Views.UC.Login.BOT;
 
-namespace Instanalyzer.Views.MUI
+namespace Instanalyzer.Views.UI
 {
     public partial class Login : Form
     {
