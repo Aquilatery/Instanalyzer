@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net48</TargetFramework>
-    <!--<TargetFrameworks>net48;net5.0</TargetFrameworks>-->
+    <!--<TargetFramework>net48</TargetFramework>-->
+    <TargetFrameworks>net48;net5.0</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
     <StartupObject>Instanalyzer.Instanalyzer</StartupObject>
@@ -45,18 +45,9 @@
     <DisableFody>true</DisableFody>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)'=='net5.0'">
-    <Reference Include="ReaLTaiizor">
-      <HintPath>..\..\..\..\ReaLTaiizor\Lib\ReaLTaiizor\src\ReaLTaiizor\bin\Release\net5.0\ReaLTaiizor.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
   <ItemGroup Condition="'$(TargetFramework)'=='net48'">
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="ReaLTaiizor">
-      <HintPath>..\..\..\..\ReaLTaiizor\Lib\ReaLTaiizor\src\ReaLTaiizor\bin\Release\net48\ReaLTaiizor.dll</HintPath>
-    </Reference>
   </ItemGroup>
   
   <ItemGroup>
@@ -66,7 +57,7 @@
   </ItemGroup>
     
   <ItemGroup>
-    <!--<PackageReference Include="ReaLTaiizor" Version="3.7.8" />-->
+    <PackageReference Include="ReaLTaiizor" Version="3.7.8.1" />
     <PackageReference Include="Costura.Fody" Version="5.0.0-alpha0281">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive; compile</IncludeAssets>
