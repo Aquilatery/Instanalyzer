@@ -3,20 +3,24 @@
   <Costura CreateTemporaryAssemblies="false" IncludeDebugSymbols="false" DisableCompression="false" DisableCleanup="false" LoadAtModuleInit="true" IgnoreSatelliteAssemblies="false">
     <!--<PreloadOrder>
       ReaLTaiizor
+      Newtonsoft.Json
       System.Diagnostics.DiagnosticSource
     </PreloadOrder>-->
 
     <!--<Unmanaged32Assemblies>
       ReaLTaiizor
+      Newtonsoft.Json
       System.Diagnostics.DiagnosticSource
     </Unmanaged32Assemblies>
     <Unmanaged64Assemblies>
       ReaLTaiizor
+      Newtonsoft.Json
       System.Diagnostics.DiagnosticSource
     </Unmanaged64Assemblies>-->
 
     <IncludeAssemblies>
       ReaLTaiizor
+      Newtonsoft.Json
       System.Diagnostics.DiagnosticSource
     </IncludeAssemblies>
   </Costura>

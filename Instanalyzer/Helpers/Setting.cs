@@ -19,7 +19,7 @@ namespace Instanalyzer.Helpers
             }
         }
 
-        private static string _ConfigFile = "Config.dat";
+        private static string _ConfigFile = "Config.json";
         public static string ConfigFile
         {
             get

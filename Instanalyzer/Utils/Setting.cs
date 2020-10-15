@@ -1,10 +1,9 @@
-﻿using System;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.Generic;
+﻿using System.IO;
+using Newtonsoft.Json;
 using static Instanalyzer.Utils.Engine;
 using static Instanalyzer.Helpers.Setting;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Instanalyzer.Utils
 {
@@ -12,20 +11,40 @@ namespace Instanalyzer.Utils
     {
         public static void Control(string Config)
         {
-            Config = DefaultPath + "\\" + Config;
             if (!Files_Control(Config))
                 Save(Config);
+            Config = DefaultPath + "\\" + Config;
             Read(Config);
         }
 
         public static void Read(string Files)
         {
-
+            Dictionary<string, string> Settings = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(Files));
+            if (Settings.ContainsKey("DefaultPath") && Settings.ContainsKey("UserFolder") && Settings.ContainsKey("DownloadFolder") && Settings.ContainsKey("DownloadPPFolder") && Settings.ContainsKey("DownloadImageFolder") && Settings.ContainsKey("DownloadVideoFolder"))
+            {
+                DefaultPath = Settings["DefaultPath"];
+                UserFolder = Settings["UserFolder"];
+                DownloadFolder = Settings["DownloadFolder"];
+                DownloadPPFolder = Settings["DownloadPPFolder"];
+                DownloadImageFolder = Settings["DownloadImageFolder"];
+                DownloadVideoFolder = Settings["DownloadVideoFolder"];
+            }
+            else
+                Save(Files);
         }
 
         public static void Save(string Files)
         {
-
+            Dictionary<string, string> Settings = new Dictionary<string, string>()
+            {
+                { "DefaultPath" , DefaultPath },
+                { "UserFolder" , UserFolder },
+                { "DownloadFolder" , DownloadFolder },
+                { "DownloadPPFolder" , DownloadPPFolder.Replace(DownloadFolder + "\\", "") },
+                { "DownloadImageFolder" , DownloadImageFolder.Replace(DownloadFolder + "\\", "") },
+                { "DownloadVideoFolder" , DownloadVideoFolder.Replace(DownloadFolder + "\\", "") }
+            };
+            File.WriteAllText(Files, JsonConvert.SerializeObject(Settings, Formatting.Indented));
         }
 
         public static void Move(string Path1, string Path2)
