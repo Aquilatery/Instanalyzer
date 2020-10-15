@@ -2,6 +2,7 @@
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using static Instanalyzer.Utils.Setting;
 using static Instanalyzer.Utils.Argument;
 using static Instanalyzer.Helpers.Setting;
 using static Instanalyzer.Helpers.Argument;
@@ -30,7 +31,7 @@ namespace Instanalyzer.Utils
                         if (!string.IsNullOrEmpty(ArgUser))
                             Helpers.Window.WindowMode = Helpers.Window.WindowType.Multi;
                         /*
-                            arg'da olan user eĞer remember olaran daha önceden girilmişse
+                            arg'da olan user eĞer remember olarak daha önceden girilmişse
                             wait'e atıp direk giriş işlemini başlatabilirsin. ETC/Account da var örnek
                         */
                     }
@@ -50,7 +51,7 @@ namespace Instanalyzer.Utils
         {
             get
             {
-                Setting_Control(ConfigFile);
+                Control(ConfigFile);
                 Folder_Control(UserFolder, true);
                 Folder_Control(DownloadFolder, true);
                 Folder_Control(DownloadPPFolder, true);
@@ -60,15 +61,7 @@ namespace Instanalyzer.Utils
             }
         }
 
-        private static void Setting_Control(string Config)
-        {
-            Config = DefaultPath + "\\" + Config;
-            if (!Files_Control(Config))
-                Setting.Save(Config);
-            Setting.Read(Config);
-        }
-
-        private static bool Folder_Control(string Folder, bool Create = false)
+        public static bool Folder_Control(string Folder, bool Create = false)
         {
             Folder = DefaultPath + "\\" + Folder;
             if (!Directory.Exists(Folder))
@@ -81,7 +74,7 @@ namespace Instanalyzer.Utils
             return true;
         }
 
-        private static bool Files_Control(string Files)
+        public static bool Files_Control(string Files)
         {
             Files = DefaultPath + "\\" + Files;
             if (!File.Exists(Files))

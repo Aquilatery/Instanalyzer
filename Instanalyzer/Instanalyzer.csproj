@@ -3,8 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <!--<TargetFramework>net48</TargetFramework>-->
-    <TargetFrameworks>net48;net5.0</TargetFrameworks>
-    <UseWindowsForms>true</UseWindowsForms>
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
     <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
     <StartupObject>Instanalyzer.Instanalyzer</StartupObject>
     <ApplicationManifest>App.manifest</ApplicationManifest>
@@ -41,7 +40,7 @@
     <InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)'=='net5.0'">
+  <PropertyGroup Condition="'$(TargetFramework)'=='net5.0-windows'">
     <DisableFody>true</DisableFody>
   </PropertyGroup>
 
@@ -57,6 +56,7 @@
   </ItemGroup>
     
   <ItemGroup>
+    <PackageReference Include="YamlDotNet" Version="8.1.2" />
     <PackageReference Include="ReaLTaiizor" Version="3.7.8.1" />
     <PackageReference Include="Costura.Fody" Version="5.0.0-alpha0281">
       <PrivateAssets>all</PrivateAssets>
