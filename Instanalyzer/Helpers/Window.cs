@@ -6,6 +6,7 @@
         {
             Sign,
             Wait,
+            Warn,
             Multi
         }
 
@@ -22,7 +23,7 @@
             }
         }
 
-        private static WindowType _WindowMode = WindowType.Sign;
+        private static WindowType _WindowMode = WindowType.Warn;
         public static WindowType WindowMode
         {
             get

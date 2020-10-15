@@ -111,6 +111,10 @@ namespace Instanalyzer.Views.UI
                     FPNL.Controls.Add(new Wait());
                     SPNL.Controls.Add(new Copyright());
                     break;
+                case Window.WindowType.Warn:
+                    FPNL.Controls.Add(new Warn());
+                    SPNL.Controls.Add(new Copyright());
+                    break;
                 case Window.WindowType.Multi:
                     FPNL.Controls.Add(new Multi());
                     SPNL.Controls.Add(new Add());

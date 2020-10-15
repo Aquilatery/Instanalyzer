@@ -1,9 +1,8 @@
 ﻿using System.IO;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using static Instanalyzer.Utils.Engine;
 using static Instanalyzer.Helpers.Setting;
-using System.Collections.Generic;
-using System.Windows.Forms;
 
 namespace Instanalyzer.Utils
 {
