@@ -1,5 +1,5 @@
 # Instanalyzer
-  <p>Instagram Analyzer v20.10.03.0054</p>
+  <p>Instagram Analyzer v20.10.16.705</p>
   <p>Visual Studio 2019</p>
   <p>.NET Framework 4.8 & .NET 5</p>
   <img src="https://raw.githubusercontent.com/Soferity/Instanalyzer/master/.screenshots/UI_1.png" />
