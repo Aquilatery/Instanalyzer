@@ -12,7 +12,9 @@ namespace Instanalyzer.Views.UC.Login.TOP
         {
             InitializeComponent();
             if (User.PPhoto != null)
+            {
                 PP.Image = User.PPhoto;
+            }
             else
             {
                 switch (User.Sex)

@@ -11,7 +11,10 @@ namespace Instanalyzer.Utils
         public static void Control(string Config)
         {
             if (!Files_Control(Config))
+            {
                 Save(Config);
+            }
+
             Config = DefaultPath + "\\" + Config;
             Read(Config);
         }
@@ -29,12 +32,14 @@ namespace Instanalyzer.Utils
                 DownloadVideoFolder = Settings["DownloadVideoFolder"];
             }
             else
+            {
                 Save(Files);
+            }
         }
 
         public static void Save(string Files)
         {
-            Dictionary<string, string> Settings = new Dictionary<string, string>()
+            Dictionary<string, string> Settings = new()
             {
                 { "DefaultPath" , DefaultPath },
                 { "UserFolder" , UserFolder },

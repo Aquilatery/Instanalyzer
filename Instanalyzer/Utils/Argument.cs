@@ -18,7 +18,10 @@ namespace Instanalyzer.Utils
                         {
                             string Val2 = Arg.Substring(Arg.IndexOf(StartBrackets) + 1, Arg.IndexOf(EndBrackets) - Arg.IndexOf(StartBrackets) - 1);
                             if (Val1 == "user" && string.IsNullOrEmpty(ArgUser))
+                            {
                                 ArgUser = Val2;
+                            }
+
                             break;
                         }
                     }

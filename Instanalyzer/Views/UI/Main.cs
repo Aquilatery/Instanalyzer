@@ -13,7 +13,9 @@ namespace Instanalyzer.Views.UI
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Hesaptan Çıkış Yapmak İstiyor Musunuz?", "Are You Sure", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
                 e.Cancel = true;
+            }
         }
     }
 }

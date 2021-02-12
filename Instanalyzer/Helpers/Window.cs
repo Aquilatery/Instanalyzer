@@ -13,27 +13,21 @@
         private static bool _ActiveWindow = true;
         public static bool ActiveWindow
         {
-            get
-            {
-                return _ActiveWindow;
-            }
-            set
-            {
-                _ActiveWindow = value;
-            }
+            get => _ActiveWindow;
+            set => _ActiveWindow = value;
         }
 
         private static WindowType _WindowMode = WindowType.Warn;
         public static WindowType WindowMode
         {
-            get
-            {
-                return _WindowMode;
-            }
+            get => _WindowMode;
             set
             {
                 if (_WindowMode != value)
+                {
                     ActiveWindow = true;
+                }
+
                 _WindowMode = value;
             }
         }

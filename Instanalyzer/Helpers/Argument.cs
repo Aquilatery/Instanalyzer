@@ -2,52 +2,22 @@
 {
     public static class Argument
     {
-        public static char StartChar
-        {
-            get
-            { 
-                return '-';
-            }
-        }
+        public static char StartChar => '-';
 
-        public static char StartBrackets
-        {
-            get
-            {
-                return '[';
-            }
-        }
+        public static char StartBrackets => '[';
 
-        public static char EndBrackets
-        {
-            get
-            {
-                return ']';
-            }
-        }
+        public static char EndBrackets => ']';
 
-        public static string[] ArgType
-        {
-            get
-            {
-                return new string[]
+        public static string[] ArgType => new string[]
                 {
                     "user"
                 };
-            }
-        }
 
         private static string _ArgUser;
         public static string ArgUser
         {
-            get
-            {
-                return _ArgUser;
-            }
-            set
-            {
-                _ArgUser = value;
-            }
+            get => _ArgUser;
+            set => _ArgUser = value;
         }
     }
 }

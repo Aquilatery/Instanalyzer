@@ -45,7 +45,9 @@ namespace Instanalyzer.Views.UI
             {
                 long Result = DateTimeOffset.UtcNow.ToUnixTimeSeconds() - Status.ChangedStatus;
                 if (Result >= 3)
+                {
                     Status.Message = Status.DefaultStatus;
+                }
             }
             catch (Exception Ex)
             {

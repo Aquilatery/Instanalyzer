@@ -9,9 +9,9 @@ namespace Instanalyzer.Views.UC.Login.ETC
 {
     public partial class Account : UserControl
     {
-        private string _Name, _Surname, _Username;
-        private Image _PPhoto = null;
-        private Sex.SexType _Sex = Sex.SexType.Unknown;
+        private readonly string _Name, _Surname, _Username;
+        private readonly Image _PPhoto = null;
+        private readonly Sex.SexType _Sex = Sex.SexType.Unknown;
 
         public Account(string Name = "Name", string Surname = "Surname", string Username = "Username", string PPhoto = null, Sex.SexType Sex = Sex.SexType.Unknown)
         {

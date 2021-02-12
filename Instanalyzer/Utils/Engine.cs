@@ -11,7 +11,7 @@ namespace Instanalyzer.Utils
 {
     public static class Engine
     {
-        private static readonly Mutex MTX = new Mutex(true, "{Soferity Instanalyzer - Instagram Analyzer}");
+        private static readonly Mutex MTX = new(true, "{Soferity Instanalyzer - Instagram Analyzer}");
 
         public static void Start_Engine(string[] Args)
         {
@@ -29,11 +29,13 @@ namespace Instanalyzer.Utils
                     {
                         Explode(Args);
                         if (!string.IsNullOrEmpty(ArgUser))
+                        {
                             Helpers.Window.WindowMode = Helpers.Window.WindowType.Multi;
+                        }
                         /*
-                            arg'da olan user eĞer remember olarak daha önceden girilmişse
-                            wait'e atıp direk giriş işlemini başlatabilirsin. ETC/Account da var örnek
-                        */
+   arg'da olan user eĞer remember olarak daha önceden girilmişse
+   wait'e atıp direk giriş işlemini başlatabilirsin. ETC/Account da var örnek
+*/
                     }
                     Application.Run(new Views.UI.Login());
                 }
@@ -44,7 +46,9 @@ namespace Instanalyzer.Utils
                 }
             }
             else
+            {
                 MessageBox.Show("Already Open!", "Instanalyzer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private static bool SEE_UI
@@ -67,9 +71,13 @@ namespace Instanalyzer.Utils
             if (!Directory.Exists(Folder))
             {
                 if (Create)
+                {
                     Directory.CreateDirectory(Folder);
+                }
                 else
+                {
                     return false;
+                }
             }
             return true;
         }
@@ -78,9 +86,13 @@ namespace Instanalyzer.Utils
         {
             Files = DefaultPath + "\\" + Files;
             if (!File.Exists(Files))
+            {
                 return false;
+            }
             else
+            {
                 return true;
+            }
         }
     }
 }

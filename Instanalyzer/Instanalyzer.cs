@@ -3,10 +3,10 @@ using static Instanalyzer.Utils.Engine;
 
 namespace Instanalyzer
 {
-    static class Instanalyzer
+    internal static class Instanalyzer
     {
         [STAThread]
-        static void Main(string[] Args = null)
+        private static void Main(string[] Args = null)
         {
             /*
                 string Argt = null;
