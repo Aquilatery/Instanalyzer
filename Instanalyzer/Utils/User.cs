@@ -1,5 +1,5 @@
-﻿using System.Drawing;
-using Instanalyzer.Helpers;
+﻿using Instanalyzer.Helpers;
+using System.Drawing;
 
 namespace Instanalyzer.Utils
 {

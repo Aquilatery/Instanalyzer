@@ -1,5 +1,5 @@
-﻿using System;
-using Instanalyzer.Utils;
+﻿using Instanalyzer.Utils;
+using System;
 using System.Windows.Forms;
 
 namespace Instanalyzer.Views.UC.Login.TOP

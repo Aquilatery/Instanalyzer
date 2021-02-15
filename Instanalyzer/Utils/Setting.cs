@@ -1,8 +1,8 @@
-﻿using System.IO;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
-using static Instanalyzer.Utils.Engine;
+using System.IO;
 using static Instanalyzer.Helpers.Setting;
+using static Instanalyzer.Utils.Engine;
 
 namespace Instanalyzer.Utils
 {
@@ -41,12 +41,12 @@ namespace Instanalyzer.Utils
         {
             Dictionary<string, string> Settings = new()
             {
-                { "DefaultPath" , DefaultPath },
-                { "UserFolder" , UserFolder },
-                { "DownloadFolder" , DownloadFolder },
-                { "DownloadPPFolder" , DownloadPPFolder.Replace(DownloadFolder + "\\", "") },
-                { "DownloadImageFolder" , DownloadImageFolder.Replace(DownloadFolder + "\\", "") },
-                { "DownloadVideoFolder" , DownloadVideoFolder.Replace(DownloadFolder + "\\", "") }
+                { "DefaultPath", DefaultPath },
+                { "UserFolder", UserFolder },
+                { "DownloadFolder", DownloadFolder },
+                { "DownloadPPFolder", DownloadPPFolder.Replace(DownloadFolder + "\\", "") },
+                { "DownloadImageFolder", DownloadImageFolder.Replace(DownloadFolder + "\\", "") },
+                { "DownloadVideoFolder", DownloadVideoFolder.Replace(DownloadFolder + "\\", "") }
             };
             File.WriteAllText(Files, JsonConvert.SerializeObject(Settings, Formatting.Indented));
         }

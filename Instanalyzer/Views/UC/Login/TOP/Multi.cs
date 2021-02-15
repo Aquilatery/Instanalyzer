@@ -1,7 +1,7 @@
-﻿using System;
-using System.Windows.Forms;
-using Instanalyzer.Helpers;
+﻿using Instanalyzer.Helpers;
 using Instanalyzer.Views.UC.Login.ETC;
+using System;
+using System.Windows.Forms;
 
 namespace Instanalyzer.Views.UC.Login.TOP
 {

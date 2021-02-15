@@ -1,9 +1,9 @@
-﻿using System;
-using ReaLTaiizor.Controls;
-using Instanalyzer.Helpers;
-using System.Windows.Forms;
-using Instanalyzer.Views.UC.Login.TOP;
+﻿using Instanalyzer.Helpers;
 using Instanalyzer.Views.UC.Login.BOT;
+using Instanalyzer.Views.UC.Login.TOP;
+using ReaLTaiizor.Controls;
+using System;
+using System.Windows.Forms;
 
 namespace Instanalyzer.Views.UI
 {

@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Instanalyzer.Helpers;
 using ReaLTaiizor.Controls;
-using Instanalyzer.Helpers;
+using System;
 using System.Windows.Forms;
 
 namespace Instanalyzer.Views.UC.Login.TOP

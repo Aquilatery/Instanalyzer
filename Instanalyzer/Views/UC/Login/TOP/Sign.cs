@@ -1,7 +1,7 @@
-﻿using System;
-using ReaLTaiizor.Util;
+﻿using Instanalyzer.Helpers;
 using ReaLTaiizor.Colors;
-using Instanalyzer.Helpers;
+using ReaLTaiizor.Util;
+using System;
 using System.Windows.Forms;
 
 namespace Instanalyzer.Views.UC.Login.TOP

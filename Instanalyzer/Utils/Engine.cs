@@ -2,10 +2,10 @@
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
-using static Instanalyzer.Utils.Setting;
-using static Instanalyzer.Utils.Argument;
-using static Instanalyzer.Helpers.Setting;
 using static Instanalyzer.Helpers.Argument;
+using static Instanalyzer.Helpers.Setting;
+using static Instanalyzer.Utils.Argument;
+using static Instanalyzer.Utils.Setting;
 
 namespace Instanalyzer.Utils
 {
@@ -16,9 +16,9 @@ namespace Instanalyzer.Utils
         public static void Start_Engine(string[] Args)
         {
             Application.EnableVisualStyles();
-            #if NET5_0
+#if NET5_0
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            #endif
+#endif
             Application.SetCompatibleTextRenderingDefault(false);
             if (MTX.WaitOne(TimeSpan.Zero, true))
             {

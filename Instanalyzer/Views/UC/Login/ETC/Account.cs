@@ -1,8 +1,8 @@
-﻿using System;
-using System.IO;
-using System.Drawing;
+﻿using Instanalyzer.Helpers;
 using Instanalyzer.Utils;
-using Instanalyzer.Helpers;
+using System;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Instanalyzer.Views.UC.Login.ETC
