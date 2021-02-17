@@ -16,7 +16,7 @@ namespace Instanalyzer.Utils
         public static void Start_Engine(string[] Args)
         {
             Application.EnableVisualStyles();
-#if NET5_0
+#if NET6_0
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
 #endif
             Application.SetCompatibleTextRenderingDefault(false);
