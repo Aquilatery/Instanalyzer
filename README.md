@@ -1,7 +1,7 @@
 # Instanalyzer
-  <p>Instagram Analyzer v21.03.02.1920</p>
-  <p>Visual Studio 2019</p>
-  <p>.NET Framework 4.8 (Minimum 4.0) & .NET 6</p>
+  <p>Instagram Analyzer v21.12.22.1812</p>
+  <p>Visual Studio 2022</p>
+  <p>.NET Framework 4.8 (Minimum 4.0) & .NET Core 3.1 & .NET 5 & .NET 6</p>
   <img src="https://raw.githubusercontent.com/Soferity/Instanalyzer/develop/.screenshots/UI_1.png" />
   <img src="https://raw.githubusercontent.com/Soferity/Instanalyzer/develop/.screenshots/UI_2.png" />
   <img src="https://raw.githubusercontent.com/Soferity/Instanalyzer/develop/.screenshots/UI_3.png" />

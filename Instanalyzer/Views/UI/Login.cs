@@ -1,7 +1,6 @@
 ﻿using Instanalyzer.Helpers;
 using Instanalyzer.Views.UC.Login.BOT;
 using Instanalyzer.Views.UC.Login.TOP;
-using ReaLTaiizor.Controls;
 using System;
 using System.Windows.Forms;
 
